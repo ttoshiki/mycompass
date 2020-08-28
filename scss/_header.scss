@@ -1,0 +1,20 @@
+@import "_variables";
+
+.header {
+
+}
+
+@include mq(pc) {
+  .header {
+  }
+}
+
+@include mq(tab) {
+  .header {
+  }
+}
+
+@include mq(mobile) {
+  .header {
+  }
+}

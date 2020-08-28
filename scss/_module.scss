@@ -1,0 +1,31 @@
+@import "_variables";
+
+.yugothic {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
+    "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic",
+    Verdana, Meiryo, sans-serif;
+}
+
+.-sp {
+  display: none;
+}
+
+.-tab {
+  display: none;
+}
+
+.linkButton {
+}
+
+@include mq(tab) {
+  .-pc {
+    display: none;
+  }
+
+  .-tab {
+    display: block;
+  }
+}
+
+@include mq(mobile) {
+}
