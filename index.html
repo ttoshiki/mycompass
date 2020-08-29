@@ -1,134 +1,211 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta property="og:url" content="https://hoge.jp/" />
-    <meta
-      property="og:title"
-      content=""
-    />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:description"
-      content=""
-    />
-    <link href="./favicon_16.ico" rel="shortcut icon" />
-    <link href="./favicon_32.ico" rel="shortcut icon" />
-    <link rel="apple-touch-icon" size="152x152" href="./apple-touch-icon.png" />
-    <title>MYコンパス</title>
-    <link rel="stylesheet" href="css/lib/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <div class="l-wrapper">
-      <div class="l-inner">
-        <header class="header" id="header">
-          <nav class="header__nav -pc">
-            <h1 class="header__logo -pc">
-              <a href="#header">
-                <img
-                  src="img/logo_primary.png"
-                  width=""
-                  height=""
-                  alt="MY COMPASSロゴ"
-                />
-              </a>
-            </h1>
-            <ul class="header__navList">
-              <li class="header__navItem">
-                <a href="#reason" class="header__navLink">カリキュラム</a>
-              </li>
-              <li class="header__navItem">
-                <a href="#flow" class="header__navLink">受講生の紹介</a>
-              </li>
-              <li class="header__navItem">
-                <a href="#price" class="header__navLink">得られること</a>
-              </li>
-              <li class="header__navItem">
-                <a href="#salon" class="header__navLink">概要</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <main>
-          <div class="catch">
-            <div class="catch__inner">
-              <picture class="catch__mvText">
-                <source srcset="-sp.jpg" media="(max-width: 768px)">
-                <source srcset="img/img_MV.jpg" media="(min-width: 769px)">
-                <img src="img/img_MV.jpg" alt="">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta property="og:url" content="https://hoge.jp/" />
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <link href="./favicon_16.ico" rel="shortcut icon" />
+  <link href="./favicon_32.ico" rel="shortcut icon" />
+  <link rel="apple-touch-icon" size="152x152" href="./apple-touch-icon.png" />
+  <title>MYコンパス</title>
+  <link rel="stylesheet" href="css/lib/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="l-wrapper">
+    <div class="l-inner">
+      <header class="header" id="header">
+        <nav class="header__nav -pc">
+          <h1 class="header__logo -pc">
+            <a href="#header">
+              <img src="img/logo_primary.png" width="" height="" alt="MY COMPASSロゴ" />
+            </a>
+          </h1>
+          <ul class="header__navList">
+            <li class="header__navItem">
+              <a href="#reason" class="header__navLink">カリキュラム</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#flow" class="header__navLink">受講生の紹介</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#price" class="header__navLink">得られること</a>
+            </li>
+            <li class="header__navItem">
+              <a href="#salon" class="header__navLink">概要</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="catch">
+          <div class="catch__inner">
+            <picture class="catch__mvText">
+              <source srcset="-sp.webp" media="(max-width: 768px)" type="image/webp">
+              <source srcset="-sp.webp" media="(min-width: 769px)" type="image/webp">
+              <source srcset="-sp.jpg" media="(max-width: 768px)">
+              <img src="img/img_MV.jpg" alt="">
+            </picture>
+            <h2 class="catch__copy">
+              １人ではたどり着けない<br>
+              私になれる。
+            </h2>
+            <span class="catch__lead">
+              仕事もライフイベントも大切にしたい<br>
+              女性のためのキャリア構築プログラム
+            </span>
+            <span class="catch__programName">MYコンパス・キャリア</span>
+          </div>
+        </div>
+        <section class="overview">
+          <p class="overview__lead">
+            <strong>３年で３００名</strong>を超える女性たちの
+          <div class="handWriting">
+            <picture>
+              <source srcset="img/img_lifecarrier.webp" type="image/webp">
+              <img src="img_lifecarrier.png" alt="ライフキャリア">
+            </picture>
+          </div>を変えてきた<br>
+          MYコンパス・アカデミーを更にアップデート
+          </p>
+          <div class="overview__graph">
+            <div class="overview_chartWrapper">
+              <div class="overview__chartCaption">
+                <span class="overview__chartSpan">アカデミー参加者</span>
+                <span class="overview__chartSpan -primary">満足度</span>
+                <strong class="overview__chartStrong">94</strong><span class="overview__chartSpan -large">%</span>
+              </div>
+              <picture>
+                <source srcset="img/img_circle.webp" type="image/webp">
+                <img src="img/img_circle.png" alt="円グラフ">
               </picture>
-              <h2 class="catch__copy">
-                １人ではたどり着けない<br>
-                私になれる。
-              </h2>
-              <span class="catch__lead">
-                仕事もライフイベントも大切にしたい<br>
-                女性のためのキャリア構築プログラム
-              </span>
-              <span class="catch__programName">MYコンパス・キャリア</span>
+            </div>
+            <div class="overview_chartWrapper">
+              <div class="overview__chartCaption">
+                <span class="overview__chartSpan">オンライン開催実績</span>
+                <span class="overview__chartSpan -primary">３年以上！</span>
+                <strong class="overview__chartStrong">300</strong><span class="overview__chartSpan -large">名以上</span>
+              </div>
+              <picture>
+                <source srcset="img/img_bar_graph.webp" type="image/webp">
+                <img src="img/img_circle.png" alt="円グラフ">
+              </picture>
             </div>
           </div>
-          <section class="overview">
-            <p class="overview__lead">
-              <strong>３年で３００名</strong>を超える女性たちの<div class="handWriting"><img src="img_lifecarrier.png" srcset="img/img_lifecarrier.png, img_lifecarrier@2x.png 2x" alt="ライフキャリア"></div>を変えてきた<br>
-              MYコンパス・アカデミーを更にアップデート
-            </p>
-            <div class="overview__graph">
-              <div class="overview_chartWrapper">
-                <div class="overview__chartCaption">
-                  <span class="overview__chartSpan">アカデミー参加者</span>
-                  <span class="overview__chartSpan -primary">満足度</span>
-                  <strong class="overview__chartStrong">94</strong><span class="overview__chartSpan -large">%</span>
-                </div>
-                <img src="img/img_circle.png" srcset="img/img_circle.png, img/img_circle@2x 2x" alt="円グラフ">
+          <ul class="overview__pointList">
+            <li class="overview__pointItem">
+              <h3 class="overview__pointHeading">POINT.1</h3>
+              <span class="overview__pointSpan">
+                オンライン開催実績<strong class="overview__pointStrong">３年以上！</strong><br>
+                参加者<strong class="overview__pointStrong">満足度９４％！</strong>
+              </span>
+            </li>
+            <li class="overview__pointItem">
+              <h3 class="overview__pointHeading">POINT.2</h3>
+              <span class="overview__pointSpan">
+                <strong class="overview__pointStrong">MYコンパスメソッドが本に！</strong><br>
+                <strong class="overview__pointStrong">時事通信社より発売中！</strong>
+              </span>
+            </li>
+            <li class="overview__pointItem">
+              <h3 class="overview__pointHeading">POINT.3</h3>
+              <span class="overview__pointSpan">
+                女性誌、WEBメディア、ラジオ他<br>
+                <strong class="overview__pointStrong">メディアでも多数掲載！</strong>
+              </span>
+            </li>
+          </ul>
+          <p class="overview__subHeading">
+            独自のメソッド、コミュニティ、キャリアコンサルティングで<br>
+          <div class="handWriting">
+            <picture>
+              <source srcset="img/img_personality.webp" type="image/webp">
+              <img src="img/img_personality.png" alt="本来の自分らしさ">
+            </picture>
+          </div>を取り戻し、<br>
+          あなただけの<strong class="overview__subHeadingStrong">個性を活かしたライフキャリアをデザイン</strong>する<br>
+          新プログラムはじまる。
+          </p>
+          <picture class="overview__logos">
+            <source srcset="img/img_logo.webp" type="image/webp">
+            <img src="img/img_logo.png" alt="">
+          </picture>
+          <p class="overview__paragraph">多数のメディアで取り組みが紹介されました。</p>
+        </section>
+        <section class="conversionArea">
+          <h2 class="conversionArea__heading">無料カウンセリング・お申し込み</h2>
+          <div class="conversionArea__links">
+            <a href="" class="conversionArea__link -primary">
+              <img src="img/icon_pc.png" srcset="img/icon_pc.png, img/icon_pc@2x.png" alt="無料カウンセリングアイコン">
+              <span class="conversionArea__text">無料カウンセリングはこちら</span>
+              <img src="img/icon_arrow.png" srcset="img/icon_arrow.png, img/icon_arrow@2x.png" alt="矢印">
+            </a>
+            <a href="" class="conversionArea__link">
+              <img src="img/icon_click.png" srcset="img/icon_click.png, img/icon_click@2x.png" alt="お申し込みアイコン">
+              <span class="conversionArea__text">お申し込みはこちら</span>
+              <img src="img/icon_arrow.png" srcset="img/icon_arrow.png, img/icon_arrow@2x.png" alt="矢印">
+            </a>
+          </div>
+        </section>
+        <section class="voice">
+          <h2 class="sectionHeading">
+            これまで<strong class="sectionHeading__strong">300人を超える女性</strong>が<br>
+            自分らしいライフキャリアへとシフト！
+          </h2>
+          <ul class="voice__list">
+            <li class="voice__item">
+              <div class="voice__person">
+                <img src="img/voice01.png" srcset="img/voice01.png, img/voice01@2x.png 2x" alt="白鳥舞">
+                <span class="voice__photo">白鳥舞さん</span>
               </div>
-              <div class="overview_chartWrapper">
-                <div class="overview__chartCaption">
-                  <span class="overview__chartSpan">オンライン開催実績</span>
-                  <span class="overview__chartSpan -primary">３年以上！</span>
-                  <strong class="overview__chartStrong">300</strong><span class="overview__chartSpan -large">名以上</span>
-                </div>
-                <img src="img/img_circle.png" srcset="img/img_bar_graph.png, img/img_bar_graph@2x.png 2x" alt="円グラフ">
+              <div class="voice__text">
+                <span class="voice__positionBefore">大手飲料メーカー マーケティング担当</span>
+                <h3 class="voice__positionAfter">大手人材会社勤務 / 副業：キャリアブランディング、個人ビジネス＆複業サポート</h3>
+                <h4 class="voice__profile">30代 / 慶應義塾大学 人間科学科 / アサヒ飲料株式会社　10年</h4>
+                <p class="voice__paragraph">
+                  初めての育休から希望の部署へ復帰後、協力的な夫や実家のサポートもあるのに、一日中タスクに追われ苦しい日々。「このままは嫌、でもどの道を選んでも大変としか思えず、やりたいことがない」・・・そんな中、プログラムに参加しました。衝撃的だったのは、頭で考える理想と心が感じている理想との大きなギャップ。本当は求めていないことをがんばろうとしていました。次第に、自分の本音を探り行動するようになりました。新しい夢を抱いて転職し、副業もスタート。本業と副業の相乗効果で、充実感にあふれた毎日です。
+                </p>
               </div>
-            </div>
-            <ul class="overview__pointList">
-              <li class="overview__pointItem">
-                <h3 class="overview__pointHeading">POINT.1</h3>
-                <span class="overview__pointSpan">
-                  オンライン開催実績<strong class="overview__pointStrong">３年以上！</strong><br>
-                  参加者<strong class="overview__pointStrong">満足度９４％！</strong>
-                </span>
-              </li>
-              <li class="overview__pointItem">
-                <h3 class="overview__pointHeading">POINT.2</h3>
-                <span class="overview__pointSpan">
-                  <strong class="overview__pointStrong">MYコンパスメソッドが本に！</strong><br>
-                  <strong class="overview__pointStrong">時事通信社より発売中！</strong>
-                </span>
-              </li>
-              <li class="overview__pointItem">
-                <h3 class="overview__pointHeading">POINT.3</h3>
-                <span class="overview__pointSpan">
-                  女性誌、WEBメディア、ラジオ他<br>
-                  <strong class="overview__pointStrong">メディアでも多数掲載！</strong>
-                </span>
-              </li>
-            </ul>
-            <p class="overview__subHeading">
-              独自のメソッド、コミュニティ、キャリアコンサルティングで<br>
-              <div class="handWriting"><img src="img/img_personality.png" srcset="img/img_personality.png, img_personality@2x.png 2x" alt="本来の自分らしさ"></div>を取り戻し、<br>
-              あなただけの<strong class="overview__subHeadingStrong">個性を活かしたライフキャリアをデザイン</strong>する<br>
-              新プログラムはじまる。
-            </p>
-            <img src="img/img_logo.png" srcset="img/img_logo.png, img_logo@2x.png 2x" alt="" class="overview__logos">
-            <p class="overview__paragraph">多数のメディアで取り組みが紹介されました。</p>
-          </section>
-        </main>
-      </div>
+            </li>
+            <li class="voice__item">
+              <div class="voice__person">
+                <img src="img/voice02.png" srcset="img/voice02.png, img/voice02@2x.png 2x" alt="遠藤有夏">
+                <span class="voice__photo">遠藤有夏さん</span>
+              </div>
+              <div class="voice__text">
+                <span class="voice__positionBefore">中国・上海で駐在妻</span>
+                <h3 class="voice__positionAfter">大レイクサイドインテリアデザイン事務所代表</h3>
+                <h4 class="voice__profile">30代 / お茶の水女子大学大学院 / 建築設備メーカー 設計・デザイン担当 ５年</h4>
+                <p class="voice__paragraph">
+                  建築業界で働いていましたが、結婚後退職。夫の転勤で海外含め5回の引越しをしました。「家族を支えるだけの人生？今キャリアを積まずに将来社会に復帰できるの？」と不安に駆られ、駐在中の上海からMYコンパスのプログラムに参加しました。プログラムの中で、理想の生活のイメージを膨らませながらワクワクしたのを覚えています。「自然の中で家族と豊かな時間を持ちつつ、やりがいのある仕事をしたい」という想いに気づき、帰国後インテリア・収納の事務所を開設。描いた理想が少しずつ現実に変わりつつある毎日です。
+                </p>
+              </div>
+            </li>
+            <li class="voice__item">
+              <div class="voice__person">
+                <img src="img/voice01.png" srcset="img/voice02.png, img/voice02@2x.png 2x" alt="柳澤聖子">
+                <span class="voice__photo">柳澤聖子さん</span>
+              </div>
+              <div class="voice__text">
+                <span class="voice__positionBefore">中国・上海で駐在妻</span>
+                <h3 class="voice__positionAfter">大レイクサイドインテリアデザイン事務所代表</h3>
+                <h4 class="voice__profile">30代 / お茶の水女子大学大学院 / 建築設備メーカー 設計・デザイン担当 ５年</h4>
+                <p class="voice__paragraph">
+                  建築業界で働いていましたが、結婚後退職。夫の転勤で海外含め5回の引越しをしました。「家族を支えるだけの人生？今キャリアを積まずに将来社会に復帰できるの？」と不安に駆られ、駐在中の上海からMYコンパスのプログラムに参加しました。プログラムの中で、理想の生活のイメージを膨らませながらワクワクしたのを覚えています。「自然の中で家族と豊かな時間を持ちつつ、やりがいのある仕事をしたい」という想いに気づき、帰国後インテリア・収納の事務所を開設。描いた理想が少しずつ現実に変わりつつある毎日です。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
