@@ -14,9 +14,6 @@
   display: none;
 }
 
-.linkButton {
-}
-
 @include mq(tab) {
   .-pc {
     display: none;
