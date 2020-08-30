@@ -1,16 +1,46 @@
 @import "_variables";
 
 .header {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  z-index: 10;
+  width: 80%;
+  min-width: $--content-width-xs;
+  background-color: $white;
+  border-radius: 10px;
+  transform: translateX(-50%);
 
-}
-
-@include mq(pc) {
-  .header {
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 48px;
   }
-}
 
-@include mq(tab) {
-  .header {
+  &__logo {
+    max-height: 48px;
+    margin: 0;
+
+    img {
+      max-width: 193px;
+    }
+  }
+
+  &__navList {
+    display: flex;
+  }
+
+  &__navItem {
+    font-size: 18px;
+
+    &:not(:first-child) {
+      margin-left: 48px;
+    }
+  }
+
+  &__navLink {
+    color: $--color-primary;
   }
 }
 

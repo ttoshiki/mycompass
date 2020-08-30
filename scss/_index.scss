@@ -1,1 +1,59 @@
 @import "_variables";
+
+.catch {
+  position: relative;
+  width: 100%;
+  height: 59.5vw;
+  min-height: 773px;
+
+  &__mainVisual {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__mainVisualPicture {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      min-width: $--content-width-md;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: clamp(316px, 41%, 41%);
+    left: clamp(688px, 53%, 53%);
+    z-index: 10;
+  }
+
+  &__copy {
+    img {
+      width: 35.7vw;
+      min-width: 515px;
+    }
+  }
+
+  &__lead {
+    display: block;
+    margin-top: clamp(40px, 2.97vw, 400px);
+    font-size: clamp(20px, 1.39vw, 100px);
+    line-height: 2;
+    color: $white;
+    letter-spacing: 6px;
+  }
+
+  &__programName {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-top: clamp(40px, 2.97vw, 400px);
+    font-size: clamp(20px, 1.39vw, 100px);
+    color: $white;
+    letter-spacing: 4px;
+    border: 1px solid $white;
+  }
+}

@@ -10,19 +10,5 @@
   display: none;
 }
 
-.-tab {
-  display: none;
-}
-
-@include mq(tab) {
-  .-pc {
-    display: none;
-  }
-
-  .-tab {
-    display: block;
-  }
-}
-
 @include mq(mobile) {
 }
