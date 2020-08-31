@@ -18,7 +18,7 @@
 
     img {
       width: 100%;
-      min-width: $--content-width-md;
+      min-width: $--content-width-xl;
       height: 100%;
       object-fit: cover;
     }
@@ -26,7 +26,7 @@
 
   &__text {
     position: absolute;
-    top: clamp(316px, 41%, 41%);
+    top: clamp(300px, 39%, 39%);
     left: clamp(688px, 53%, 53%);
     z-index: 10;
   }
@@ -55,5 +55,349 @@
     color: $white;
     letter-spacing: 4px;
     border: 1px solid $white;
+  }
+}
+
+.overview {
+  position: relative;
+  z-index: 10;
+  width: 77.7%;
+  min-width: $--content-width-md;
+  padding: 100px 106px 110px;
+  margin: 0 auto -80px;
+  margin-top: clamp(-80px, -6.95vw, -1000px);
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20.88px 3.12px rgba(76, 76, 76, 0.1);
+
+  &__lead {
+    font-size: 28px;
+    line-height: 2.1;
+    text-align: center;
+    letter-spacing: 4px;
+    letter-spacing: 6px;
+    font-feature-settings: "palt";
+  }
+
+  &__leadStrong {
+    font-weight: 400;
+    color: $--color-primary;
+  }
+
+  .handWriting {
+    margin: 0px 4px 0 -16px;
+
+    img {
+      position: relative;
+      top: 8px;
+      width: 184px;
+    }
+  }
+
+  &__graph {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    margin: 88px 0 0;
+  }
+
+  &__chartWrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 46%;
+  }
+
+  &__chartSpan {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    &.-primary {
+      margin-top: 6px;
+      color: $--color-primary;
+    }
+  }
+
+  &__chartNum {
+    display: block;
+    margin-top: 6px;
+    letter-spacing: 1px;
+  }
+
+  &__chartCaption {
+    position: absolute;
+    top: 28px;
+
+    &.-pie {
+      left: 0;
+    }
+
+    &.-bar {
+      left: 36px;
+    }
+  }
+
+  &__chart {
+    &.-pie {
+      img {
+        max-width: 264px;
+      }
+    }
+
+    &.-bar {
+      img {
+        max-width: 160px;
+      }
+    }
+  }
+
+  &__chartStrong {
+    font-size: 60px;
+    color: $--color-primary;
+  }
+
+  &__chartUnit {
+    font-size: 40px;
+    color: $--color-primary;
+  }
+
+  &__pointList {
+    display: flex;
+    padding: 16px 0;
+    margin: 64px 0 0;
+    border: 1px solid $--color-primary;
+    border-radius: 10px;
+  }
+
+  &__pointItem {
+    width: calc(100% / 3);
+    text-align-last: center;
+
+    &:not(:first-child) {
+      border-left: 1px solid $--color-primary;
+    }
+  }
+
+  &__pointHeading {
+    margin: 12px 0 16px;
+    font-size: 13px;
+    font-weight: 400;
+    color: $--color-primary;
+    letter-spacing: 2px;
+  }
+
+  &__pointSpan {
+    display: block;
+    margin: 16px 0 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  &__pointStrong {
+    color: $--color-primary;
+  }
+
+  &__subHeading {
+    margin: 48px 0 0;
+    font-size: 23px;
+    line-height: 2.1;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  &__subHeadingStrong {
+    font-weight: 400;
+    color: $--color-primary;
+  }
+
+  &__logos {
+    display: block;
+    margin: 40px 0 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__paragraphWrapper {
+    text-align: center;
+  }
+
+  &__paragraph {
+    display: inline-block;
+    padding: 0 10px 4px;
+    margin: 32px 0 0;
+    font-size: 18px;
+    letter-spacing: 3px;
+    border-bottom: 2px solid $--color-primary;
+  }
+}
+
+.conversionArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 138px 24px;
+  background-image: url(../img/img_back.jpg);
+  background-size: cover;
+
+  &__heading {
+    font-size: 25px;
+    color: $white;
+    letter-spacing: 6px;
+    font-feature-settings: "palt";
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 48px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: $white;
+    letter-spacing: 2px;
+    border: 1px solid $white;
+    border-radius: 10px;
+
+    &.-primary {
+      padding: 0 0 0 40px;
+      margin-right: 40px;
+      color: $--color-primary;
+      background-color: $white;
+    }
+
+    &.-secondary {
+      padding: 0 0 0 56px;
+      .conversionArea__text {
+        margin-left: 48px;
+      }
+
+      .conversionArea__arrow {
+        filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+          brightness(107%) contrast(101%);
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    height: 120px;
+
+    &.-pc {
+      img {
+        width: 72px;
+        height: auto;
+      }
+    }
+
+    &.-click {
+      img {
+        width: 40px;
+        height: auto;
+      }
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+
+    img {
+      width: 24px;
+    }
+  }
+
+  &__text {
+    margin-left: 24px;
+  }
+}
+
+.voice {
+  max-width: $--content-width-md;
+  padding: 80px 0;
+  margin: 0 auto;
+
+  &__list {
+    margin: 64px 0 0;
+  }
+
+  &__item {
+    display: flex;
+
+    &:not(:first-child) {
+      margin-top: 56px;
+    }
+  }
+
+  &__person {
+    text-align: center;
+
+    img {
+      width: 220px;
+      height: auto;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    color: $--color-primary;
+    letter-spacing: 2px;
+  }
+
+  &__text {
+    margin: 0 0 0 16px;
+  }
+
+  &__positionBefore {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  &__positionAfter {
+    margin: 10px 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: $--color-primary;
+    letter-spacing: 2px;
+
+    &::before {
+      display: inline-block;
+      content: ">>";
+      transform: scale(0.6, 1);
+    }
+  }
+
+  &__profile {
+    padding: 4px 0 4px 12px;
+    margin: 18px 0 0;
+    font-weight: 400;
+    color: $white;
+    letter-spacing: 2px;
+    background-image: -webkit-linear-gradient(
+      103deg,
+      rgb(181, 30, 36) 0%,
+      rgb(203, 57, 63) 29%,
+      rgb(225, 84, 89) 100%
+    );
+  }
+
+  &__paragraph {
+    font-size: 15px;
+    line-height: 2.3;
+    text-align: justify;
+    letter-spacing: 2px;
+    font-feature-settings: "palt";
   }
 }

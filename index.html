@@ -15,6 +15,9 @@
   <title>MYコンパス</title>
   <link rel="stylesheet" href="css/lib/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -24,10 +27,17 @@
         <nav class="header__nav">
           <h1 class="header__logo">
             <a href="#header">
-              <picture>
-                <source srcset="img/logo-primary.webp" type="image/webp">
-                <img src="img/logo-primary.png" alt="MY COMPASSロゴ">
-              </picture>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299.71 38.81">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #bb0f1f;
+                    }
+                  </style>
+                </defs>
+                <path class="cls-1"
+                  d="M29.1.93,19,27.77,9.51.93H2.78L0,38.06H5.73l1.68-27,9.31,27h4L31,10.51l1.56,27.55h5.94L36,.93Zm150.53,0L169.5,27.77,160,.93h-6.73l-2.78,37.13h5.73l1.68-27,9.31,27h4l10.26-27.55L183,38.06H189L186.49.93ZM55.57,16.84,47.27.93H40.36l12,21.66V38.06H58.3V22.67L70.79.93H64Zm53.3,14.64s-4.15,2-11.69.86A10.34,10.34,0,0,1,90,26.12c-1.89-4.25-1.91-10,0-13.27,2.66-4.73,7.26-9.67,19.27-6l.49.15,1.49-5.3-.49-.13C103.44-.33,93.22-.82,86,7.74c-4,4.69-4.93,13-2.31,19.81,2.31,6,6.87,9.72,12.84,10.51a32.69,32.69,0,0,0,4.38.3,27.89,27.89,0,0,0,9.9-1.65l.44-.18-1.86-5.3Zm21-31c-10.39,0-17.37,7.62-17.37,19,0,11.62,7,19.42,17.37,19.42,8.36,0,16.82-6.59,16.82-19.19C146.66,10.77,142.25.43,129.84.43Zm10.69,19.19c0,5.8-3.4,14-11,14C124.34,33.59,118.7,29,118.7,19c0-6.53,4.46-13.8,10.87-13.8C138.22,5.17,140.53,14.25,140.53,19.62ZM216.15,4.31c-6-5.92-19.91-3.48-20.5-3.37l-.41.08V38.07h5.6V23.62A35,35,0,0,0,212,22.37c3-.95,5.78-4.35,6.72-8.26a10,10,0,0,0-2.56-9.8Zm-3.52,7.55a5.41,5.41,0,0,1-1.83,4.31c-2.93,2.55-8.55,2.21-10.15,2V5.5c1.59-.16,7.21-.5,10.14,2.05a5.41,5.41,0,0,1,1.84,4.31ZM228.69.93,215.74,38.06h6.59L226,26.71H237.9l3.76,11.35H248L235.21.93Zm7.47,20.55h-8.49l4.18-13Zm30.27-3.82c-.36-.18-.78-.37-1.23-.58-2.88-1.35-7.24-3.38-8-6.23a4,4,0,0,1,.73-3.42C261,2.68,269.58,6.91,269.67,7l.49.25,1.95-4.92-.45-.19c-3-1.23-10.82-4.48-17.26.91a8.84,8.84,0,0,0-3.34,8.29,11.16,11.16,0,0,0,6.67,8.38c5.4,2.27,8.45,4.59,9.34,7.09a5,5,0,0,1-.42,4.1c-3.8,4.81-14,.45-14.13.4l-.45-.2L249.83,36l.42.22a24.47,24.47,0,0,0,10.36,2.56,14.82,14.82,0,0,0,8.72-2.64c3-3,4.34-6.51,3.78-10a11.84,11.84,0,0,0-6.68-8.46Zm33.16,8.47a11.78,11.78,0,0,0-6.67-8.46c-.36-.18-.78-.37-1.23-.58-2.88-1.35-7.24-3.38-8-6.22a4,4,0,0,1,.73-3.42c3.13-4.75,11.69-.52,11.78-.47l.49.25,2-4.92-.45-.19c-3-1.23-10.82-4.49-17.26.91a8.84,8.84,0,0,0-3.34,8.29,11.16,11.16,0,0,0,6.67,8.38c5.4,2.27,8.45,4.59,9.34,7.09a5,5,0,0,1-.42,4.1c-3.8,4.82-14,.45-14.13.4l-.45-.2L276.32,36l.42.22a24.47,24.47,0,0,0,10.36,2.56,14.82,14.82,0,0,0,8.72-2.64C298.81,33.17,300.15,29.62,299.59,26.13Z" />
+              </svg>
             </a>
           </h1>
           <ul class="header__navList">
@@ -50,9 +60,9 @@
         <div class="catch">
           <div class="catch__mainVisual">
             <picture class="catch__mainVisualPicture">
-              <source srcset="img/mv-sp.webp" media="(max-width: 768px)" type="image/webp">
-              <source srcset="img/mv.webp" media="(min-width: 769px)" type="image/webp">
-              <source srcset="img/mv-sp.jpg" media="(max-width: 768px)">
+              <source srcset="img/mv-sp.webp" media="(max-width: 480px)" type="image/webp">
+              <source srcset="img/mv.webp" media="(min-width: 481px)" type="image/webp">
+              <source srcset="img/mv-sp.jpg" media="(max-width: 480px)">
               <img src="img/mv.jpg" alt="">
             </picture>
           </div>
@@ -72,60 +82,60 @@
         </div>
         <section class="overview">
           <div class="overview__lead">
-            <strong>３年で３００名</strong>を超える女性たちの
+            <strong class="overview__leadStrong">３年で３００名</strong>を超える女性たちの
             <div class="handWriting">
               <picture>
-                <source srcset="img/img_lifecarrier.webp" type="image/webp">
-                <img src="img_lifecarrier.png" alt="ライフキャリア">
+                <source srcset="img/lifecarrier.webp" type="image/webp">
+                <img src="img/lifecarrier.png" alt="ライフキャリア">
               </picture>
             </div>を変えてきた<br>
             MYコンパス・アカデミーを更にアップデート
           </div>
           <div class="overview__graph">
-            <div class="overview_chartWrapper">
-              <div class="overview__chartCaption">
+            <div class="overview__chartWrapper">
+              <div class="overview__chartCaption -pie">
                 <span class="overview__chartSpan">アカデミー参加者</span>
                 <span class="overview__chartSpan -primary">満足度</span>
-                <strong class="overview__chartStrong">94</strong><span class="overview__chartSpan -large">%</span>
+                <span class="overview__chartNum">
+                  <strong class="overview__chartStrong">94</strong>
+                  <span class="overview__chartUnit">%</span>
+                </span>
               </div>
-              <picture>
+              <picture class="overview__chart -pie">
                 <source srcset="img/img_circle.webp" type="image/webp">
                 <img src="img/img_circle.png" alt="円グラフ">
               </picture>
             </div>
-            <div class="overview_chartWrapper">
-              <div class="overview__chartCaption">
+            <div class="overview__chartWrapper">
+              <div class="overview__chartCaption -bar">
                 <span class="overview__chartSpan">オンライン開催実績</span>
                 <span class="overview__chartSpan -primary">３年以上！</span>
-                <strong class="overview__chartStrong">300</strong><span class="overview__chartSpan -large">名以上</span>
+                <span class="overview__chartNum">
+                  <strong class="overview__chartStrong">300</strong>
+                  <span class="overview__chartUnit">名以上</span>
+                </span>
               </div>
-              <picture>
+              <picture class="overview__chart -bar">
                 <source srcset="img/img_bar_graph.webp" type="image/webp">
-                <img src="img/img_circle.png" alt="円グラフ">
+                <img src="img/img_bar_graph.png" alt="棒グラフ">
               </picture>
             </div>
           </div>
           <ul class="overview__pointList">
             <li class="overview__pointItem">
               <h3 class="overview__pointHeading">POINT.1</h3>
-              <span class="overview__pointSpan">
-                オンライン開催実績<strong class="overview__pointStrong">３年以上！</strong><br>
-                参加者<strong class="overview__pointStrong">満足度９４％！</strong>
-              </span>
+              <span class="overview__pointSpan">オンライン開催実績<strong class="overview__pointStrong">３年以上！</strong><br></span>
+              <span class="overview__pointSpan">参加者<strong class="overview__pointStrong">満足度９４％！</strong></span>
             </li>
             <li class="overview__pointItem">
               <h3 class="overview__pointHeading">POINT.2</h3>
-              <span class="overview__pointSpan">
-                <strong class="overview__pointStrong">MYコンパスメソッドが本に！</strong><br>
-                <strong class="overview__pointStrong">時事通信社より発売中！</strong>
-              </span>
+              <span class="overview__pointSpan"><strong class="overview__pointStrong">MYコンパスメソッドが本に！</strong><br></span>
+              <span class="overview__pointSpan">時事通信社より発売中！</span>
             </li>
             <li class="overview__pointItem">
               <h3 class="overview__pointHeading">POINT.3</h3>
-              <span class="overview__pointSpan">
-                女性誌、WEBメディア、ラジオ他<br>
-                <strong class="overview__pointStrong">メディアでも多数掲載！</strong>
-              </span>
+              <span class="overview__pointSpan">女性誌、WEBメディア、ラジオ他</span>
+              <span class="overview__pointSpan"><strong class="overview__pointStrong">メディアでも多数掲載！</strong></span>
             </li>
           </ul>
           <div class="overview__subHeading">
@@ -140,32 +150,34 @@
             新プログラムはじまる。
           </div>
           <picture class="overview__logos">
-            <source srcset="img/img_logo.webp" type="image/webp">
-            <img src="img/img_logo.png" alt="">
+            <source srcset="img/logos.webp" type="image/webp">
+            <img src="img/logos.png" alt="">
           </picture>
-          <p class="overview__paragraph">多数のメディアで取り組みが紹介されました。</p>
+          <div class="overview__paragraphWrapper">
+            <p class="overview__paragraph">多数のメディアで取り組みが紹介されました。</p>
+          </div>
         </section>
         <section class="conversionArea">
           <h2 class="conversionArea__heading">無料カウンセリング・お申し込み</h2>
           <div class="conversionArea__links">
             <a href="" class="conversionArea__link -primary">
-              <picture class="overview__logos">
+              <picture class="conversionArea__icon -pc">
                 <source srcset="img/icon_pc.webp" type="image/webp">
                 <img src="img/icon_pc.png" alt="無料カウンセリングアイコン">
               </picture>
               <span class="conversionArea__text">無料カウンセリングはこちら</span>
-              <picture class="overview__logos">
+              <picture class="conversionArea__arrow">
                 <source srcset="img/icon_arrow.webp" type="image/webp">
                 <img src="img/icon_arrow.png" alt="矢印">
               </picture>
             </a>
-            <a href="" class="conversionArea__link">
-              <picture class="overview__logos">
+            <a href="" class="conversionArea__link -secondary">
+              <picture class="conversionArea__icon -click">
                 <source srcset="img/icon_click.webp" type="image/webp">
                 <img src="img/icon_click.png" alt="お申し込みアイコン">
               </picture>
               <span class="conversionArea__text">お申し込みはこちら</span>
-              <picture class="overview__logos">
+              <picture class="conversionArea__arrow">
                 <source srcset="img/icon_arrow.webp" type="image/webp">
                 <img src="img/icon_arrow.png" alt="矢印">
               </picture>
@@ -181,10 +193,10 @@
             <li class="voice__item">
               <div class="voice__person">
                 <picture>
-                  <source srcset="img/img_voice01.webp" type="image/webp">
-                  <img src="img/img_voice01.png" alt="白鳥舞">
+                  <source srcset="img/voice_01.webp" type="image/webp">
+                  <img src="img/voice_01.png" alt="白鳥舞">
                 </picture>
-                <span class="voice__photo">白鳥舞さん</span>
+                <span class="voice__name">白鳥舞さん</span>
               </div>
               <div class="voice__text">
                 <span class="voice__positionBefore">大手飲料メーカー マーケティング担当</span>
@@ -198,14 +210,14 @@
             <li class="voice__item">
               <div class="voice__person">
                 <picture>
-                  <source srcset="img/img_voice02.webp" type="image/webp">
-                  <img src="img/img_voice02.png" alt="遠藤有夏">
+                  <source srcset="img/voice_02.webp" type="image/webp">
+                  <img src="img/voice_02.png" alt="遠藤有夏">
                 </picture>
-                <span class="voice__photo">遠藤有夏さん</span>
+                <span class="voice__name">遠藤有夏さん</span>
               </div>
               <div class="voice__text">
                 <span class="voice__positionBefore">中国・上海で駐在妻</span>
-                <h3 class="voice__positionAfter">大レイクサイドインテリアデザイン事務所代表</h3>
+                <h3 class="voice__positionAfter">レイクサイドインテリアデザイン事務所代表</h3>
                 <h4 class="voice__profile">30代 / お茶の水女子大学大学院 / 建築設備メーカー 設計・デザイン担当 ５年</h4>
                 <p class="voice__paragraph">
                   建築業界で働いていましたが、結婚後退職。夫の転勤で海外含め5回の引越しをしました。「家族を支えるだけの人生？今キャリアを積まずに将来社会に復帰できるの？」と不安に駆られ、駐在中の上海からMYコンパスのプログラムに参加しました。プログラムの中で、理想の生活のイメージを膨らませながらワクワクしたのを覚えています。「自然の中で家族と豊かな時間を持ちつつ、やりがいのある仕事をしたい」という想いに気づき、帰国後インテリア・収納の事務所を開設。描いた理想が少しずつ現実に変わりつつある毎日です。
@@ -215,10 +227,10 @@
             <li class="voice__item">
               <div class="voice__person">
                 <picture>
-                  <source srcset="img/img_voice03.webp" type="image/webp">
-                  <img src="img/img_voice03.png" alt="柳澤聖子">
+                  <source srcset="img/voice_03.webp" type="image/webp">
+                  <img src="img/voice_03.png" alt="柳澤聖子">
                 </picture>
-                <span class="voice__photo">柳澤聖子さん</span>
+                <span class="voice__name">柳澤聖子さん</span>
               </div>
               <div class="voice__text">
                 <span class="voice__positionBefore">大手教育出版社 商品企画開発・編集担当</span>
@@ -232,10 +244,10 @@
             <li class="voice__item">
               <div class="voice__person">
                 <picture>
-                  <source srcset="img/img_voice04.webp" type="image/webp">
-                  <img src="img/img_voice04.png" alt="中西葉子">
+                  <source srcset="img/voice_04.webp" type="image/webp">
+                  <img src="img/voice_04.png" alt="中西葉子">
                 </picture>
-                <span class="voice__photo">中西葉子さん</span>
+                <span class="voice__name">中西葉子さん</span>
               </div>
               <div class="voice__text">
                 <span class="voice__positionBefore">第１子育休復職直後 ワーママ</span>

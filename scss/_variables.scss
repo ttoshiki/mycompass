@@ -1,17 +1,17 @@
 // color
 $white: #ffffff;
-$black: #3a3531;
+$black: #000000;
 $--color-primary: #b51d24;
 
 // Width Rule
 $--content-width-xxs: 320px;
 $--content-width-xs: 769px;
-$--content-width-sm: 1000px;
-$--content-width-md: 1300px;
+$--content-width-md: 1120px;
+$--content-width-xl: 1280px;
 
 $breakpoints: (
-  "mobile": "screen and (max-width: 768px)",
-  "pc": "screen and (min-width: 1025px)",
+  "mobile": "screen and (max-width: 480px)",
+  "pc": "screen and (min-width: 481px)",
 );
 
 @mixin mq($breakpoint: pc) {
