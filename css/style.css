@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -69,7 +70,7 @@ a {
   left: 50%;
   z-index: 10;
   width: 80%;
-  min-width: 769px;
+  min-width: 1000px;
   background-color: #ffffff;
   border-radius: 10px;
   transform: translateX(-50%);
@@ -335,14 +336,25 @@ a {
 }
 
 .conversionArea {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   padding: 138px 24px;
-  background-image: url(../img/img_back.jpg);
-  background-size: cover;
+}
+
+.conversionArea__backimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.conversionArea__backimage img {
+  width: 100%;
+  height: 100%;
 }
 
 .conversionArea__heading {
@@ -383,10 +395,6 @@ a {
 
 .conversionArea__link.-secondary .conversionArea__text {
   margin-left: 48px;
-}
-
-.conversionArea__link.-secondary .conversionArea__arrow {
-  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
 }
 
 .conversionArea__icon {
@@ -481,7 +489,6 @@ a {
   font-weight: 400;
   color: #ffffff;
   letter-spacing: 2px;
-  background-image: -webkit-linear-gradient(103deg, #b51e24 0%, #cb393f 29%, #e15459 100%);
 }
 
 .voice__paragraph {
@@ -490,4 +497,360 @@ a {
   text-align: justify;
   letter-spacing: 2px;
   font-feature-settings: "palt";
+}
+
+.career {
+  padding: 48px 0;
+}
+
+.career__inner {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.career .sectionHeading {
+  color: #ffffff;
+}
+
+.career__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 12px;
+  grid-column-gap: 12px;
+  margin: 32px 0 0;
+}
+
+.career__item {
+  padding: 12px 0;
+  font-size: 14px;
+  line-height: 2.1;
+  color: #b51d24;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-feature-settings: "palt";
+}
+
+.backimage img {
+  width: 100%;
+  min-width: 1280px;
+}
+
+.get {
+  margin: 80px 0;
+}
+
+.get .sectionHeading {
+  line-height: 2.14;
+}
+
+.get__handwriting img {
+  display: block;
+  max-width: 716px;
+  margin: 60px auto 0;
+}
+
+.get__list {
+  max-width: 1000px;
+  margin: 72px auto 0;
+  counter-reset: get-num 0;
+}
+
+.get__item {
+  position: relative;
+  display: flex;
+  padding: 32px 64px 32px 32px;
+  text-align: justify;
+  box-shadow: 0px 7px 16.92px 1.08px rgba(54, 54, 54, 0.21);
+}
+
+.get__item .get__itemPicture img {
+  width: 300px;
+}
+
+.get__item::before {
+  position: absolute;
+  top: -15px;
+  left: 56px;
+  font-size: 20px;
+  color: #e25c60;
+  letter-spacing: 4px;
+  content: "#" counter(get-num);
+  counter-increment: get-num 1;
+}
+
+.get__item:first-child .get__itemHandwriting img {
+  width: 72px;
+}
+
+.get__item:nth-child(2) .get__itemHandwriting img {
+  width: 60px;
+}
+
+.get__item:nth-child(3) {
+  padding: 32px 64px 32px 50px;
+}
+
+.get__item:nth-child(3) .get__itemHandwriting img {
+  width: 41px;
+}
+
+.get__item:nth-child(3) .get__itemPicture {
+  margin: 24px 8px 24px 56px;
+}
+
+.get__item:nth-child(2n) {
+  flex-direction: row-reverse;
+  padding: 32px 48px 32px 64px;
+}
+
+.get__item:nth-child(2n)::before {
+  right: 56px;
+  left: auto;
+}
+
+.get__item:nth-child(2n) .get__text {
+  margin: 32px 52px 0 0;
+}
+
+.get__item:not(:first-child) {
+  margin: 80px 0 0;
+}
+
+.get__itemPicture {
+  display: block;
+  margin: 24px 0 24px 44px;
+}
+
+.get__itemPicture img {
+  vertical-align: bottom;
+  box-shadow: 0px 0px 12.22px 0.78px rgba(54, 54, 54, 0.21);
+}
+
+.get__itemPicture:nth-child(2n) {
+  margin: 24px 44px 24px 16px;
+}
+
+.get__text {
+  margin: 32px 0 0 52px;
+}
+
+.get__heading {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #b51d24;
+  letter-spacing: 2px;
+}
+
+.get__paragraph {
+  margin: 20px 0 0;
+  font-size: 15px;
+  line-height: 2.6;
+  color: #414141;
+}
+
+.recommend__list {
+  max-width: 614px;
+  margin: 64px auto;
+}
+
+.recommend__item {
+  display: flex;
+  align-items: center;
+}
+
+.recommend__item:not(:first-child) {
+  margin: 24px 0 0;
+}
+
+.recommend__item .recommend__icon {
+  display: flex;
+  align-items: center;
+}
+
+.recommend__item .recommend__icon img {
+  width: 36px;
+  height: auto;
+}
+
+.recommend__item .recommend__span {
+  margin-left: 16px;
+  font-size: 18px;
+  color: #b51d24;
+  letter-spacing: 2px;
+}
+
+.loopslider {
+  margin: 100px 0;
+}
+
+.loopslider__wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.loopslider__images {
+  display: flex;
+}
+
+.loopslider__images:first-child {
+  animation: gallery 100s -50s linear infinite;
+}
+
+.loopslider__images:first-child .loopslider__picture:nth-child(odd) {
+  margin: 72px 0 0;
+}
+
+.loopslider__images:last-child {
+  animation: gallery2 100s linear infinite;
+}
+
+.loopslider__images:last-child .loopslider__picture:nth-child(even) {
+  margin: 72px 0 0;
+}
+
+.loopslider__images img {
+  height: 300px;
+}
+
+@keyframes gallery {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes gallery2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.curriculum {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.curriculum__lead {
+  margin: 28px auto 0;
+  font-size: 18px;
+  line-height: 2.7;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.curriculum .handWriting {
+  margin: 0 4px 0 -12px;
+}
+
+.curriculum .handWriting picture {
+  padding: 0 4px;
+}
+
+.curriculum .handWriting img {
+  position: relative;
+  top: 7px;
+  width: 144px;
+}
+
+.curriculum__termHeader {
+  display: block;
+  margin: 48px 0 64px;
+}
+
+.curriculum__termHeader img {
+  width: 100%;
+}
+
+.curriculum__term {
+  position: relative;
+}
+
+.curriculum__term:not(:first-of-type) {
+  margin-top: 56px;
+}
+
+.curriculum__termArrow {
+  position: absolute;
+}
+
+.curriculum__termArrow img {
+  width: 30px;
+}
+
+.curriculum__termInner {
+  margin-left: 60px;
+}
+
+.curriculum__termNum {
+  display: inline-block;
+  padding: 8px 24px;
+  color: #b51d24;
+  letter-spacing: 3px;
+  border: 1px solid #b51d24;
+  border-radius: 10px;
+}
+
+.curriculum__termHeading {
+  margin: 24px 0 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #b51d24;
+  letter-spacing: 1px;
+}
+
+.curriculum__termParagraph {
+  margin: 12px 0 0;
+  font-size: 15px;
+  line-height: 2.6;
+  letter-spacing: 1px;
+}
+
+.curriculum__summary {
+  padding: 24px 32px 16px;
+  margin: 20px 0 0;
+  background-color: #fdf5f6;
+  border-radius: 10px;
+}
+
+.curriculum__summaryHeading {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #b51d24;
+}
+
+.curriculum__summaryList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px 0 0;
+}
+
+.curriculum__summaryItem {
+  width: 48%;
+  margin: 0 0 8px;
+  font-size: 15px;
+}
+
+.curriculum__summaryItem::before {
+  content: "・";
+}
+
+.curriculum__caution {
+  display: block;
+  margin: 24px 0 0;
+  font-size: 13px;
+  line-height: 2.3;
+  letter-spacing: 1px;
+}
+
+.curriculum__summaryContents {
+  line-height: 2;
 }
