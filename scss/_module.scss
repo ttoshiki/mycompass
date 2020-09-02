@@ -37,4 +37,7 @@
 }
 
 @include mq(mobile) {
+  .-sp {
+    display: block;
+  }
 }

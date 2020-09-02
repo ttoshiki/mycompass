@@ -64,6 +64,12 @@ a {
   color: #b51d24;
 }
 
+@media screen and (max-width: 480px) {
+  .-sp {
+    display: block;
+  }
+}
+
 .header {
   position: absolute;
   top: 30px;
@@ -1238,4 +1244,63 @@ a {
   margin: 48px 0 0;
   font-size: 14px;
   letter-spacing: 3px;
+}
+
+@media screen and (max-width: 480px) {
+  .overview {
+    width: 90%;
+    min-width: auto;
+    padding: 24px 16px 32px;
+  }
+  .overview__lead {
+    font-size: 22px;
+  }
+  .overview .handWriting {
+    margin: 0 4px 0 0;
+  }
+  .overview .handWriting img {
+    width: 160px;
+  }
+  .overview__graph {
+    flex-direction: column;
+    margin: 64px 0 0;
+  }
+  .overview__chartWrapper {
+    width: 100%;
+  }
+  .overview__chartWrapper:not(:first-of-type) {
+    margin-top: 48px;
+  }
+  .overview__chartCaption {
+    top: auto;
+    width: 100%;
+  }
+  .overview__chartCaption.-bar {
+    left: auto;
+  }
+  .overview__chart.-pie {
+    width: 60%;
+    margin-top: 24px;
+  }
+  .overview__chart.-pie img {
+    width: 100%;
+  }
+  .overview__chart.-bar {
+    width: 46%;
+  }
+  .overview__chart.-bar img {
+    width: 100%;
+  }
+  .overview__chartNum {
+    letter-spacing: 0;
+  }
+  .overview__chartSpan {
+    font-size: 14px;
+  }
+  .overview__chartStrong {
+    font-size: 48px;
+  }
+  .overview__chartUnit {
+    font-size: 32px;
+  }
 }

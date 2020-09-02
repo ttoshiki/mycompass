@@ -1142,3 +1142,80 @@
     letter-spacing: 3px;
   }
 }
+
+@include mq(mobile) {
+  .overview {
+    width: 90%;
+    min-width: auto;
+    padding: 24px 16px 32px;
+
+    &__lead {
+      font-size: 22px;
+    }
+
+    .handWriting {
+      margin: 0 4px 0 0;
+
+      img {
+        width: 160px;
+      }
+    }
+
+    &__graph {
+      flex-direction: column;
+      margin: 64px 0 0;
+    }
+
+    &__chartWrapper {
+      width: 100%;
+
+      &:not(:first-of-type) {
+        margin-top: 48px;
+      }
+    }
+
+    &__chartCaption {
+      top: auto;
+      width: 100%;
+
+      &.-bar {
+        left: auto;
+      }
+    }
+
+    &__chart {
+      &.-pie {
+        width: 60%;
+        margin-top: 24px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &.-bar {
+        width: 46%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &__chartNum {
+      letter-spacing: 0;
+    }
+
+    &__chartSpan {
+      font-size: 14px;
+    }
+
+    &__chartStrong {
+      font-size: 48px;
+    }
+
+    &__chartUnit {
+      font-size: 32px;
+    }
+  }
+}
