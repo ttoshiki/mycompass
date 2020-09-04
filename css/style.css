@@ -147,6 +147,30 @@ a {
   letter-spacing: 1px;
 }
 
+.fixedConversionArea {
+  position: fixed;
+  top: 160px;
+  right: 0;
+  z-index: 100;
+  writing-mode: vertical-rl;
+}
+
+.fixedConversionArea__link {
+  display: inline-block;
+  height: 214px;
+  padding: 0 14px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: #b51d24;
+  border: 1px solid #b51d24;
+}
+
+.fixedConversionArea__link.-secondary {
+  color: #b51d24;
+  background-color: #ffffff;
+}
+
 .catch {
   position: relative;
   width: 100%;

@@ -1,5 +1,29 @@
 @import "_variables";
 
+.fixedConversionArea {
+  position: fixed;
+  top: 160px;
+  right: 0;
+  z-index: 100;
+  writing-mode: vertical-rl;
+
+  &__link {
+    display: inline-block;
+    height: 214px;
+    padding: 0 14px;
+    color: $white;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: $--color-primary;
+    border: 1px solid $--color-primary;
+
+    &.-secondary {
+      color: $--color-primary;
+      background-color: $white;
+    }
+  }
+}
+
 .catch {
   position: relative;
   width: 100%;
