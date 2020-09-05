@@ -36,3 +36,17 @@
     letter-spacing: 1px;
   }
 }
+
+@include mq(mobile) {
+  .footer {
+    padding-bottom: 16.54vw;
+
+    &__logo {
+      width: 160px;
+    }
+
+    &__navItem {
+      font-size: 13px;
+    }
+  }
+}

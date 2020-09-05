@@ -65,8 +65,19 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+  .-pc {
+    display: none;
+  }
   .-sp {
     display: block;
+  }
+  .handWriting picture {
+    padding: 0;
+  }
+  .sectionHeading {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 3px;
   }
 }
 
@@ -114,6 +125,15 @@ a {
   color: #b51d24;
 }
 
+@media screen and (max-width: 480px) {
+  .header {
+    min-width: auto;
+  }
+  .header__nav.-pc {
+    display: none;
+  }
+}
+
 .footer__logo {
   width: 180px;
   margin: 40px auto 0;
@@ -145,6 +165,18 @@ a {
   font-size: 11px;
   color: #ffffff;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding-bottom: 16.54vw;
+  }
+  .footer__logo {
+    width: 160px;
+  }
+  .footer__navItem {
+    font-size: 13px;
+  }
 }
 
 .fixedConversionArea {
@@ -618,6 +650,7 @@ a {
 
 .get__handwriting img {
   display: block;
+  width: 90%;
   max-width: 716px;
   margin: 60px auto 0;
 }
@@ -659,6 +692,10 @@ a {
   width: 60px;
 }
 
+.get__item:nth-child(2) .get__itemPicture {
+  margin: 24px 44px 24px 16px;
+}
+
 .get__item:nth-child(3) {
   padding: 32px 64px 32px 50px;
 }
@@ -697,10 +734,6 @@ a {
 .get__itemPicture img {
   vertical-align: bottom;
   box-shadow: 0px 0px 12.22px 0.78px rgba(54, 54, 54, 0.21);
-}
-
-.get__itemPicture:nth-child(2n) {
-  margin: 24px 44px 24px 16px;
 }
 
 .get__text {
@@ -1271,19 +1304,69 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+  .fixedConversionArea {
+    top: auto;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    writing-mode: horizontal-tb;
+  }
+  .fixedConversionArea__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 16.54vw;
+    font-size: 3.75vw;
+  }
+  .catch__mainVisualPicture img {
+    min-width: auto;
+    min-height: 600px;
+  }
+  .catch__copy {
+    text-align: center;
+  }
+  .catch__copy img {
+    width: 92vw;
+    min-width: auto;
+  }
+  .catch__text {
+    top: 82vw;
+    left: auto;
+    width: 100%;
+  }
+  .catch__lead {
+    width: 92vw;
+    margin: 0 auto;
+    font-size: 3.85vw;
+    text-align: left;
+    letter-spacing: 3px;
+  }
+  .catch__programNameWrapper {
+    display: block;
+    width: 92vw;
+    margin: 0 auto;
+  }
+  .catch__programName {
+    margin: 6vw auto 0;
+    font-size: 3.85vw;
+    text-align: center;
+  }
   .overview {
     width: 90%;
     min-width: auto;
     padding: 24px 16px 32px;
+    margin-top: -56vw;
   }
   .overview__lead {
     font-size: 22px;
+    letter-spacing: 4px;
   }
   .overview .handWriting {
-    margin: 0 4px 0 0;
+    margin: 0 0 0 -4px;
   }
   .overview .handWriting img {
-    width: 160px;
+    width: 154px;
   }
   .overview__graph {
     flex-direction: column;
@@ -1326,5 +1409,412 @@ a {
   }
   .overview__chartUnit {
     font-size: 32px;
+  }
+  .overview__pointList {
+    flex-direction: column;
+    padding: 0;
+    margin: 48px 0 0;
+  }
+  .overview__pointItem {
+    width: 90%;
+    padding: 16px 0;
+    margin: 0 auto;
+  }
+  .overview__pointItem:not(:first-child) {
+    padding: 16px 0;
+    border-top: 1px solid #b51d24;
+    border-left: none;
+  }
+  .overview__subHeading {
+    margin: 32px 0 0;
+    font-size: 16px;
+  }
+  .overview__paragraph {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .conversionArea {
+    padding: 120px 20px;
+  }
+  .conversionArea__backimage img {
+    min-height: 600px;
+  }
+  .conversionArea__heading {
+    text-align: center;
+  }
+  .conversionArea__links {
+    flex-direction: column;
+    width: 100%;
+  }
+  .conversionArea__link {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .conversionArea__link.-primary {
+    padding: 0 16px;
+    margin-right: auto;
+  }
+  .conversionArea__link.-secondary {
+    padding: 0 0 0 28px;
+    margin: 32px auto 0;
+  }
+  .conversionArea__icon {
+    height: 108px;
+  }
+  .conversionArea__icon.-pc img {
+    width: 56px;
+  }
+  .conversionArea__icon.-click img {
+    width: 34px;
+  }
+  .conversionArea__text {
+    margin-left: 20px;
+  }
+  .voice {
+    padding: 48px 20px;
+  }
+  .voice__list {
+    margin: 40px 0 0;
+  }
+  .voice__item {
+    flex-direction: column;
+  }
+  .voice__item:not(:first-child) {
+    margin-top: 48px;
+  }
+  .voice__person {
+    display: flex;
+    flex-direction: column;
+  }
+  .voice__name {
+    font-size: 16px;
+  }
+  .voice__positionBefore {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+  }
+  .voice__positionAfter {
+    font-size: 16px;
+  }
+  .voice__profile {
+    padding: 6px 12px 6px 12px;
+  }
+  .career__inner {
+    padding: 0 20px;
+  }
+  .career__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .career__item {
+    display: flex;
+    align-items: center;
+    width: 47%;
+    padding: 12px 8px;
+    text-align: justify;
+  }
+  .backimage img {
+    min-width: auto;
+  }
+  .get {
+    padding: 0 20px;
+    margin: 48px 0;
+  }
+  .get__handwriting img {
+    width: 100%;
+    margin: 40px auto 0;
+  }
+  .get__list {
+    margin: 56px auto 0;
+  }
+  .get__item, .get__item:nth-child(2n), .get__item:not(:first-child) {
+    flex-direction: column;
+    padding: 16px 20px;
+  }
+  .get__item .get__itemPicture, .get__item:nth-child(2n) .get__itemPicture, .get__item:not(:first-child) .get__itemPicture {
+    margin: 0;
+  }
+  .get__item .get__itemPicture img, .get__item:nth-child(2n) .get__itemPicture img, .get__item:not(:first-child) .get__itemPicture img {
+    width: 100%;
+  }
+  .get__item::before, .get__item:nth-child(2n)::before, .get__item:not(:first-child)::before {
+    content: none;
+  }
+  .get__item .get__text, .get__item:nth-child(2n) .get__text, .get__item:not(:first-child) .get__text {
+    margin: 20px 0 0;
+  }
+  .get__item:first-child .get__itemHandwriting img {
+    width: 100px;
+  }
+  .get__item:nth-child(2) .get__itemHandwriting img {
+    width: 84px;
+  }
+  .get__item:nth-child(3) .get__itemHandwriting img {
+    width: 128px;
+  }
+  .get__item:not(:first-child) {
+    margin: 48px 0 0;
+  }
+  .get__itemPicture:nth-child(2n) {
+    margin: 0;
+  }
+  .get__text {
+    margin: 20px 0 0 0;
+  }
+  .get__heading {
+    font-size: 16px;
+    text-align: center;
+  }
+  .get__itemHandwriting.-sp {
+    position: relative;
+    display: block;
+    margin: 32px 0 0;
+    text-align: center;
+  }
+  .get__itemHandwriting.-sp::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    color: #e25c60;
+    letter-spacing: 4px;
+    content: "#" counter(get-num);
+    counter-increment: get-num 1;
+  }
+  .get__paragraph {
+    margin: 16px 0 0;
+    font-size: 13px;
+    line-height: 2.1;
+  }
+  .recommend {
+    padding: 0 20px;
+    margin: 48px 0;
+  }
+  .recommend__list {
+    margin: 24px 0;
+  }
+  .recommend__item .recommend__icon img {
+    width: 24px;
+  }
+  .recommend__item .recommend__span {
+    margin-left: 12px;
+    font-size: 13px;
+  }
+  .loopslider {
+    margin: 48px 0;
+  }
+  .loopslider__images img {
+    height: 160px;
+  }
+  .loopslider__images:first-child .loopslider__picture:nth-child(odd) {
+    margin: 40px 0 0;
+  }
+  .loopslider__images:last-child .loopslider__picture:nth-child(even) {
+    margin: 40px 0 0;
+  }
+  .curriculum {
+    padding: 0 20px;
+  }
+  .curriculum__lead {
+    font-size: 14px;
+    line-height: 2.5;
+  }
+  .curriculum .handWriting {
+    margin: -8px 4px 0 -4px;
+  }
+  .curriculum .handWriting img {
+    width: 112px;
+  }
+  .curriculum__termHeader {
+    margin: 24px 0 0;
+  }
+  .curriculum__termInner {
+    padding: 0 16px 24px;
+    margin-left: 0;
+    border: 6px solid #f9eaeb;
+  }
+  .curriculum__termNum {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    padding: 8px 20px;
+    font-size: 13px;
+    background-color: #ffffff;
+    transform: translateX(-50%);
+  }
+  .curriculum__termHeading {
+    margin: 40px 0 0;
+    font-size: 14px;
+    text-align: center;
+  }
+  .curriculum__termParagraph {
+    font-size: 13px;
+  }
+  .curriculum__summary {
+    padding: 20px 16px 20px 24px;
+  }
+  .curriculum__summaryList {
+    flex-direction: column;
+    margin: 8px 0 0;
+  }
+  .curriculum__summaryItem {
+    width: 100%;
+    font-size: 13px;
+  }
+  .curriculum__caution {
+    font-size: 12px;
+  }
+  .developer {
+    padding: 0 20px;
+  }
+  .developer__contents {
+    flex-direction: column-reverse;
+    margin: 24px 0 0;
+  }
+  .developer__contents img {
+    width: 100%;
+    margin: 0;
+  }
+  .developer__profile {
+    margin: 24px 0 0;
+  }
+  .developer__position {
+    font-size: 12px;
+  }
+  .developer__name {
+    font-size: 22px;
+  }
+  .developer__paragraph {
+    margin: 20px 0 0;
+    font-size: 14px;
+    line-height: 2.4;
+  }
+  .consultant {
+    padding: 0 20px;
+  }
+  .consultant__list {
+    grid-template-columns: 1fr;
+    margin: 24px 0 0;
+  }
+  .consultant__photo {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .consultant__position {
+    font-size: 12px;
+  }
+  .consultant__name {
+    font-size: 22px;
+  }
+  .consultant__paragraph {
+    margin: 20px 0 0;
+    font-size: 14px;
+    line-height: 2.4;
+  }
+  .course {
+    padding: 0 20px;
+    margin: 64px auto 0;
+  }
+  .course__table {
+    margin: 24px 0 0;
+  }
+  .course__row {
+    flex-direction: column;
+  }
+  .course__row:not(:first-of-type) dt {
+    padding-top: 24px;
+  }
+  .course__row:not(:last-of-type) {
+    border-bottom: none;
+  }
+  .course__row dt {
+    width: 100%;
+    padding-bottom: 8px;
+    font-size: 14px;
+    border-right: none;
+    border-bottom: 1px solid #b51d24;
+  }
+  .course__row dd {
+    width: 100%;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+  }
+  .course__item {
+    font-size: 13px;
+    text-align: left;
+  }
+  .flow {
+    margin: 64px auto 0;
+  }
+  .flow__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0 0;
+  }
+  .flow__item {
+    width: 46%;
+    padding: 32px 12px 8px;
+    margin-bottom: 32px;
+  }
+  .flow__item:nth-child(even) {
+    margin-left: 12px;
+  }
+  .flow__item::before {
+    top: -16px;
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+  .flow__itemHeading {
+    font-size: 14px;
+  }
+  .flow__paragraph {
+    font-size: 12px;
+    line-height: 2.1;
+  }
+  .faq {
+    padding: 0 20px;
+    margin: 48px auto 0;
+  }
+  .faq__list {
+    margin: 24px 0 0;
+  }
+  .faq__question {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .faq__question::before {
+    width: 48px;
+    height: 32px;
+  }
+  .faq__questionInner {
+    margin: 6px 0 0 0;
+    font-size: 16px;
+    line-height: 2;
+  }
+  .faq__answer {
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .faq__answer::before {
+    width: 48px;
+    height: 32px;
+  }
+  .faq__answerInner {
+    width: 100%;
+    margin: 6px 0 0 0;
+  }
+  .form {
+    padding: 80px 20px;
+  }
+  .form__heading {
+    font-size: 22px;
+  }
+  .form__subHeading {
+    font-size: 13px;
   }
 }

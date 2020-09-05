@@ -495,6 +495,7 @@
   &__handwriting {
     img {
       display: block;
+      width: 90%;
       max-width: 716px;
       margin: 60px auto 0;
     }
@@ -544,6 +545,10 @@
           width: 60px;
         }
       }
+
+      .get__itemPicture {
+        margin: 24px 44px 24px 16px;
+      }
     }
 
     &:nth-child(3) {
@@ -585,10 +590,6 @@
     img {
       vertical-align: bottom;
       box-shadow: 0px 0px 12.22px 0.78px rgba(54, 54, 54, 0.21);
-    }
-
-    &:nth-child(2n) {
-      margin: 24px 44px 24px 16px;
     }
   }
 
@@ -1168,20 +1169,83 @@
 }
 
 @include mq(mobile) {
+  .fixedConversionArea {
+    top: auto;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    writing-mode: horizontal-tb;
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      height: 16.54vw;
+      font-size: 3.75vw;
+    }
+  }
+
+  .catch {
+    &__mainVisualPicture {
+      img {
+        min-width: auto;
+        min-height: 600px;
+      }
+    }
+
+    &__copy {
+      text-align: center;
+
+      img {
+        width: 92vw;
+        min-width: auto;
+      }
+    }
+
+    &__text {
+      top: 82vw;
+      left: auto;
+      width: 100%;
+    }
+
+    &__lead {
+      width: 92vw;
+      margin: 0 auto;
+      font-size: 3.85vw;
+      text-align: left;
+      letter-spacing: 3px;
+    }
+
+    &__programNameWrapper {
+      display: block;
+      width: 92vw;
+      margin: 0 auto;
+    }
+
+    &__programName {
+      margin: 6vw auto 0;
+      font-size: 3.85vw;
+      text-align: center;
+    }
+  }
+
   .overview {
     width: 90%;
     min-width: auto;
     padding: 24px 16px 32px;
+    margin-top: -56vw;
 
     &__lead {
       font-size: 22px;
+      letter-spacing: 4px;
     }
 
     .handWriting {
-      margin: 0 4px 0 0;
+      margin: 0 0 0 -4px;
 
       img {
-        width: 160px;
+        width: 154px;
       }
     }
 
@@ -1240,6 +1304,568 @@
 
     &__chartUnit {
       font-size: 32px;
+    }
+
+    &__pointList {
+      flex-direction: column;
+      padding: 0;
+      margin: 48px 0 0;
+    }
+
+    &__pointItem {
+      width: 90%;
+      padding: 16px 0;
+      margin: 0 auto;
+
+      &:not(:first-child) {
+        padding: 16px 0;
+        border-top: 1px solid $--color-primary;
+        border-left: none;
+      }
+    }
+
+    &__subHeading {
+      margin: 32px 0 0;
+      font-size: 16px;
+    }
+
+    &__paragraph {
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .conversionArea {
+    padding: 120px 20px;
+
+    &__backimage {
+      img {
+        min-height: 600px;
+      }
+    }
+
+    &__heading {
+      text-align: center;
+    }
+
+    &__links {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__link {
+      width: 100%;
+      margin: 0 auto;
+
+      &.-primary {
+        padding: 0 16px;
+        margin-right: auto;
+      }
+
+      &.-secondary {
+        padding: 0 0 0 28px;
+        margin: 32px auto 0;
+      }
+    }
+
+    &__icon {
+      height: 108px;
+
+      &.-pc {
+        img {
+          width: 56px;
+        }
+      }
+
+      &.-click {
+        img {
+          width: 34px;
+        }
+      }
+    }
+
+    &__text {
+      margin-left: 20px;
+    }
+  }
+
+  .voice {
+    padding: 48px 20px;
+
+    &__list {
+      margin: 40px 0 0;
+    }
+
+    &__item {
+      flex-direction: column;
+
+      &:not(:first-child) {
+        margin-top: 48px;
+      }
+    }
+
+    &__person {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__name {
+      font-size: 16px;
+    }
+
+    &__positionBefore {
+      display: block;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    &__positionAfter {
+      font-size: 16px;
+    }
+
+    &__profile {
+      padding: 6px 12px 6px 12px;
+    }
+  }
+
+  .career {
+    &__inner {
+      padding: 0 20px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      width: 47%;
+      padding: 12px 8px;
+      text-align: justify;
+    }
+  }
+
+  .backimage {
+    img {
+      min-width: auto;
+    }
+  }
+
+  .get {
+    padding: 0 20px;
+    margin: 48px 0;
+
+    &__handwriting {
+      img {
+        width: 100%;
+        margin: 40px auto 0;
+      }
+    }
+
+    &__list {
+      margin: 56px auto 0;
+    }
+
+    &__item,
+    &__item:nth-child(2n),
+    &__item:not(:first-child) {
+      flex-direction: column;
+      padding: 16px 20px;
+
+      .get__itemPicture {
+        margin: 0;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &::before {
+        content: none;
+      }
+
+      .get__text {
+        margin: 20px 0 0;
+      }
+    }
+
+    &__item {
+      &:first-child {
+        .get__itemHandwriting {
+          img {
+            width: 100px;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        .get__itemHandwriting {
+          img {
+            width: 84px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .get__itemHandwriting {
+          img {
+            width: 128px;
+          }
+        }
+      }
+
+      &:not(:first-child) {
+        margin: 48px 0 0;
+      }
+    }
+
+    &__itemPicture {
+      &:nth-child(2n) {
+        margin: 0;
+      }
+    }
+
+    &__text {
+      margin: 20px 0 0 0;
+    }
+
+    &__heading {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    &__itemHandwriting {
+      &.-sp {
+        position: relative;
+        display: block;
+        margin: 32px 0 0;
+        text-align: center;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 20px;
+          color: #e25c60;
+          letter-spacing: 4px;
+          content: "#" counter(get-num);
+          counter-increment: get-num 1;
+        }
+      }
+    }
+
+    &__paragraph {
+      margin: 16px 0 0;
+      font-size: 13px;
+      line-height: 2.1;
+    }
+  }
+
+  .recommend {
+    padding: 0 20px;
+    margin: 48px 0;
+
+    &__list {
+      margin: 24px 0;
+    }
+
+    &__item {
+      .recommend__icon {
+        img {
+          width: 24px;
+        }
+      }
+
+      .recommend__span {
+        margin-left: 12px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .loopslider {
+    margin: 48px 0;
+
+    &__images {
+      img {
+        height: 160px;
+      }
+
+      &:first-child {
+        .loopslider__picture {
+          &:nth-child(odd) {
+            margin: 40px 0 0;
+          }
+        }
+      }
+
+      &:last-child {
+        .loopslider__picture {
+          &:nth-child(even) {
+            margin: 40px 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .curriculum {
+    padding: 0 20px;
+
+    &__lead {
+      font-size: 14px;
+      line-height: 2.5;
+    }
+
+    .handWriting {
+      margin: -8px 4px 0 -4px;
+
+      img {
+        width: 112px;
+      }
+    }
+
+    &__termHeader {
+      margin: 24px 0 0;
+    }
+
+    &__termInner {
+      padding: 0 16px 24px;
+      margin-left: 0;
+      border: 6px solid #f9eaeb;
+    }
+
+    &__termNum {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      padding: 8px 20px;
+      font-size: 13px;
+      background-color: $white;
+      transform: translateX(-50%);
+    }
+
+    &__termHeading {
+      margin: 40px 0 0;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    &__termParagraph {
+      font-size: 13px;
+    }
+
+    &__summary {
+      padding: 20px 16px 20px 24px;
+    }
+
+    &__summaryList {
+      flex-direction: column;
+      margin: 8px 0 0;
+    }
+
+    &__summaryItem {
+      width: 100%;
+      font-size: 13px;
+    }
+
+    &__caution {
+      font-size: 12px;
+    }
+  }
+
+  .developer {
+    padding: 0 20px;
+
+    &__contents {
+      flex-direction: column-reverse;
+      margin: 24px 0 0;
+
+      img {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    &__profile {
+      margin: 24px 0 0;
+    }
+
+    &__position {
+      font-size: 12px;
+    }
+
+    &__name {
+      font-size: 22px;
+    }
+
+    &__paragraph {
+      margin: 20px 0 0;
+      font-size: 14px;
+      line-height: 2.4;
+    }
+  }
+
+  .consultant {
+    padding: 0 20px;
+
+    &__list {
+      grid-template-columns: 1fr;
+      margin: 24px 0 0;
+    }
+
+    &__photo {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &__position {
+      font-size: 12px;
+    }
+
+    &__name {
+      font-size: 22px;
+    }
+
+    &__paragraph {
+      margin: 20px 0 0;
+      font-size: 14px;
+      line-height: 2.4;
+    }
+  }
+
+  .course {
+    padding: 0 20px;
+    margin: 64px auto 0;
+
+    &__table {
+      margin: 24px 0 0;
+    }
+
+    &__row {
+      flex-direction: column;
+
+      &:not(:first-of-type) {
+        dt {
+          padding-top: 24px;
+        }
+      }
+
+      &:not(:last-of-type) {
+        border-bottom: none;
+      }
+
+      dt {
+        width: 100%;
+        padding-bottom: 8px;
+        font-size: 14px;
+        border-right: none;
+        border-bottom: 1px solid #b51d24;
+      }
+
+      dd {
+        width: 100%;
+        margin: auto;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+
+    &__item {
+      font-size: 13px;
+      text-align: left;
+    }
+  }
+
+  .flow {
+    margin: 64px auto 0;
+
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 0 0;
+    }
+
+    &__item {
+      width: 46%;
+      padding: 32px 12px 8px;
+      margin-bottom: 32px;
+
+      &:nth-child(even) {
+        margin-left: 12px;
+      }
+
+      &::before {
+        top: -16px;
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+      }
+    }
+
+    &__itemHeading {
+      font-size: 14px;
+    }
+
+    &__paragraph {
+      font-size: 12px;
+      line-height: 2.1;
+    }
+  }
+
+  .faq {
+    padding: 0 20px;
+    margin: 48px auto 0;
+
+    &__list {
+      margin: 24px 0 0;
+    }
+
+    &__question {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &::before {
+        width: 48px;
+        height: 32px;
+      }
+    }
+
+    &__questionInner {
+      margin: 6px 0 0 0;
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    &__answer {
+      flex-direction: column;
+      font-size: 14px;
+
+      &::before {
+        width: 48px;
+        height: 32px;
+      }
+    }
+
+    &__answerInner {
+      width: 100%;
+      margin: 6px 0 0 0;
+    }
+  }
+
+  .form {
+    padding: 80px 20px;
+
+    &__heading {
+      font-size: 22px;
+    }
+
+    &__subHeading {
+      font-size: 13px;
     }
   }
 }
