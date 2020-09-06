@@ -16,6 +16,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 4px 48px;
+
+    &.-pc {
+      .cls-1 {
+        fill: #bb0f1f;
+      }
+    }
+
+    &.-sp {
+      display: none;
+      .cls-1 {
+        fill: $white;
+      }
+    }
   }
 
   &__logo {
@@ -46,11 +59,64 @@
 
 @include mq(mobile) {
   .header {
+    top: 12px;
+    width: 100%;
     min-width: auto;
+    padding: 0 8px;
+    background-color: transparent;
 
     &__nav {
+      padding: 0;
+
       &.-pc {
         display: none;
+      }
+
+      &.-sp {
+        display: flex;
+      }
+    }
+
+    &__logo {
+      margin-left: 16px;
+      line-height: 1;
+    }
+
+    &__hammenu {
+      height: 48px;
+    }
+
+    &__trigger,
+    &__trigger span {
+      box-sizing: border-box;
+      display: inline-block;
+      transition: all 0.4s;
+    }
+
+    &__trigger {
+      position: relative;
+      width: 48px;
+      height: 48px;
+    }
+
+    &__trigger span {
+      position: absolute;
+      left: 50%;
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+
+      &:first-of-type {
+        transform: translate(-50%, 12px);
+      }
+
+      &:nth-of-type(2) {
+        top: 48%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:nth-of-type(3) {
+        transform: translate(-50%, 31px);
       }
     }
   }

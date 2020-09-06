@@ -100,6 +100,18 @@ a {
   padding: 4px 48px;
 }
 
+.header__nav.-pc .cls-1 {
+  fill: #bb0f1f;
+}
+
+.header__nav.-sp {
+  display: none;
+}
+
+.header__nav.-sp .cls-1 {
+  fill: #ffffff;
+}
+
 .header__logo {
   max-height: 44px;
   margin: 0;
@@ -127,16 +139,65 @@ a {
 
 @media screen and (max-width: 480px) {
   .header {
+    top: 12px;
+    width: 100%;
     min-width: auto;
+    padding: 0 8px;
+    background-color: transparent;
+  }
+  .header__nav {
+    padding: 0;
   }
   .header__nav.-pc {
     display: none;
+  }
+  .header__nav.-sp {
+    display: flex;
+  }
+  .header__logo {
+    margin-left: 16px;
+    line-height: 1;
+  }
+  .header__hammenu {
+    height: 48px;
+  }
+  .header__trigger,
+  .header__trigger span {
+    box-sizing: border-box;
+    display: inline-block;
+    transition: all 0.4s;
+  }
+  .header__trigger {
+    position: relative;
+    width: 48px;
+    height: 48px;
+  }
+  .header__trigger span {
+    position: absolute;
+    left: 50%;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+  }
+  .header__trigger span:first-of-type {
+    transform: translate(-50%, 12px);
+  }
+  .header__trigger span:nth-of-type(2) {
+    top: 48%;
+    transform: translate(-50%, -50%);
+  }
+  .header__trigger span:nth-of-type(3) {
+    transform: translate(-50%, 31px);
   }
 }
 
 .footer__logo {
   width: 180px;
   margin: 40px auto 0;
+}
+
+.footer__logo .cls-1 {
+  fill: #bb0f1f;
 }
 
 .footer__navList {
@@ -242,7 +303,7 @@ a {
 
 .catch__lead {
   display: block;
-  margin-top: clamp(40px, 2.97vw, 400px);
+  margin-top: clamp(32px, 2.97vw, 400px);
   font-size: clamp(20px, 1.39vw, 100px);
   line-height: 2;
   color: #ffffff;
@@ -252,7 +313,7 @@ a {
 .catch__programName {
   display: inline-block;
   padding: 4px 8px;
-  margin-top: clamp(40px, 2.97vw, 400px);
+  margin-top: clamp(30px, 2.97vw, 400px);
   font-size: clamp(20px, 1.39vw, 100px);
   color: #ffffff;
   letter-spacing: 4px;
@@ -362,7 +423,7 @@ a {
 .overview__pointList {
   display: flex;
   padding: 16px 0;
-  margin: 64px 0 0;
+  margin: 56px 0 0;
   border: 1px solid #b51d24;
   border-radius: 10px;
 }
@@ -388,7 +449,7 @@ a {
   display: block;
   margin: 16px 0 8px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .overview__pointStrong {
@@ -437,7 +498,7 @@ a {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 138px 24px;
+  padding: 138px 24px 100px;
 }
 
 .conversionArea__backimage {
@@ -449,7 +510,8 @@ a {
 
 .conversionArea__backimage img {
   width: 100%;
-  height: 100%;
+  height: 486px;
+  object-fit: cover;
 }
 
 .conversionArea__heading {
@@ -585,7 +647,7 @@ a {
 
 .voice__profile {
   padding: 4px 0 4px 12px;
-  margin: 18px 0 0;
+  margin: 22px 0 0;
   font-weight: 400;
   color: #ffffff;
   letter-spacing: 2px;
@@ -1068,7 +1130,7 @@ a {
 }
 
 .course__table {
-  margin: 32px 0 0;
+  margin: 40px 0 0;
   border: 1px solid #b51d24;
   border-radius: 10px;
   box-shadow: 0px 0px 12.42px 5.58px rgba(111, 108, 108, 0.08);
@@ -1192,7 +1254,7 @@ a {
 
 .flow__itemHeading {
   margin: 0;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
   color: #b51d24;
@@ -1319,6 +1381,13 @@ a {
     height: 16.54vw;
     font-size: 3.75vw;
   }
+  .catch {
+    height: 95vh;
+    min-height: auto;
+  }
+  .catch__mainVisual {
+    height: 100%;
+  }
   .catch__mainVisualPicture img {
     min-width: auto;
     min-height: 600px;
@@ -1331,7 +1400,7 @@ a {
     min-width: auto;
   }
   .catch__text {
-    top: 82vw;
+    top: 50vh;
     left: auto;
     width: 100%;
   }
@@ -1356,21 +1425,21 @@ a {
     width: 90%;
     min-width: auto;
     padding: 24px 16px 32px;
-    margin-top: -56vw;
+    margin-top: -5vw;
   }
   .overview__lead {
     font-size: 22px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
   }
   .overview .handWriting {
-    margin: 0 0 0 -4px;
+    margin: -6px 0 0 -4px;
   }
   .overview .handWriting img {
-    width: 154px;
+    width: 140px;
   }
   .overview__graph {
     flex-direction: column;
-    margin: 64px 0 0;
+    margin: 48px 0 0;
   }
   .overview__chartWrapper {
     width: 100%;
