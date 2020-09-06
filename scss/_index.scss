@@ -1337,6 +1337,16 @@
       font-size: 16px;
     }
 
+    &__logos {
+      margin: 24px 0 0;
+
+      img {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
     &__paragraph {
       font-size: 14px;
       letter-spacing: 2px;

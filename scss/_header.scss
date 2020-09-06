@@ -4,7 +4,7 @@
   position: absolute;
   top: 30px;
   left: 50%;
-  z-index: 10;
+  z-index: 500;
   width: 80%;
   min-width: $--content-width-xs;
   background-color: $white;
@@ -59,11 +59,12 @@
 
 @include mq(mobile) {
   .header {
-    top: 12px;
+    top: 0;
     width: 100%;
     min-width: auto;
-    padding: 0 8px;
+    padding: 16px 8px;
     background-color: transparent;
+    border-radius: 0;
 
     &__nav {
       padding: 0;
@@ -84,6 +85,43 @@
 
     &__hammenu {
       height: 48px;
+    }
+
+    &__hammenuWrapper {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100vw;
+      height: 93vh;
+      background-color: rgba($color: $--color-primary, $alpha: 0.9);
+    }
+
+    &__hammenuInner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 90%;
+      font-size: 16px;
+
+      a {
+        color: $white;
+
+        &:not(:first-child) {
+          margin-top: 48px;
+        }
+      }
+    }
+
+    &.-fixed {
+      position: fixed;
+      background-color: $white;
+
+      .header__logo {
+        .cls-1 {
+          fill: $--color-primary;
+        }
+      }
     }
 
     &__trigger,
@@ -118,6 +156,18 @@
       &:nth-of-type(3) {
         transform: translate(-50%, 31px);
       }
+    }
+
+    &__trigger.active span:nth-of-type(1) {
+      background-color: $--color-primary;
+      transform: translate(-12px, 22px) rotate(-45deg);
+    }
+    &__trigger.active span:nth-of-type(2) {
+      opacity: 0;
+    }
+    &__trigger.active span:nth-of-type(3) {
+      background-color: $--color-primary;
+      transform: translate(-12px, 22px) rotate(45deg);
     }
   }
 }

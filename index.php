@@ -61,16 +61,6 @@
               <span></span>
               <span></span>
             </span>
-            <div class="header__hammenuWrapper">
-              <div class="header__hammenuInner">
-                <a href="" class="header__hammenuLink">カリキュラム</a>
-                <a href="" class="header__hammenuLink">受講生の紹介</a>
-                <a href="" class="header__hammenuLink">得られること</a>
-                <a href="" class="header__hammenuLink">概要</a>
-                <a href="" class="header__hammenuConversion">無料カウンセリング</a>
-                <a href="" class="header__hammenuConversion">お申し込み</a>
-              </div>
-            </div>
           </div>
         </nav>
       </header>
@@ -751,7 +741,7 @@
             まずは、無料カウンセリングから<br class="-pc">はじめましょう。
           </h2>
           <h3 class="form__subHeading">オンライン無料カウンセリング <br class="-sp">予約フォーム</h3>
-          <!-- カレンダー埋め込み -->
+          <?php echo do_shortcode('[booking_package id=1]'); ?>
         </section>
       </main>
       <footer class="footer">
