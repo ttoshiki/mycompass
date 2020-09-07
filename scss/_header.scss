@@ -62,7 +62,7 @@
     top: 0;
     width: 100%;
     min-width: auto;
-    padding: 16px 8px;
+    padding: 8px;
     background-color: transparent;
     border-radius: 0;
 
@@ -80,7 +80,12 @@
 
     &__logo {
       margin-left: 16px;
+      font-size: 1em;
       line-height: 1;
+
+      svg {
+        width: 140px;
+      }
     }
 
     &__hammenu {
@@ -89,7 +94,7 @@
 
     &__hammenuWrapper {
       position: fixed;
-      top: 80px;
+      top: 64px;
       left: 0;
       display: none;
       justify-content: center;
