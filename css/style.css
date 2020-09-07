@@ -166,6 +166,8 @@ a {
     position: fixed;
     top: 80px;
     left: 0;
+    display: none;
+    justify-content: center;
     width: 100vw;
     height: 93vh;
     background-color: rgba(181, 29, 36, 0.9);
@@ -175,21 +177,37 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90%;
+    height: 86%;
     font-size: 16px;
   }
   .header__hammenuInner a {
     color: #ffffff;
+    letter-spacing: 3px;
   }
   .header__hammenuInner a:not(:first-child) {
     margin-top: 48px;
   }
-  .header.-fixed {
+  .header__hammenuInner .header__hammenuConversion {
+    width: 64vw;
+    padding: 24px 0;
+    font-weight: 600;
+    color: #b51d24;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  .header.-fixed, .header.-opened {
     position: fixed;
     background-color: #ffffff;
   }
-  .header.-fixed .header__logo .cls-1 {
+  .header.-fixed .header__logo .cls-1, .header.-opened .header__logo .cls-1 {
     fill: #b51d24;
+  }
+  .header.-fixed .header__trigger span:nth-of-type(1),
+  .header.-fixed .header__trigger span:nth-of-type(2),
+  .header.-fixed .header__trigger span:nth-of-type(3), .header.-opened .header__trigger span:nth-of-type(1),
+  .header.-opened .header__trigger span:nth-of-type(2),
+  .header.-opened .header__trigger span:nth-of-type(3) {
+    background-color: #b51d24;
   }
   .header__trigger,
   .header__trigger span {
@@ -219,14 +237,14 @@ a {
   .header__trigger span:nth-of-type(3) {
     transform: translate(-50%, 31px);
   }
-  .header__trigger.active span:nth-of-type(1) {
+  .header__trigger.-opened span:nth-of-type(1) {
     background-color: #b51d24;
     transform: translate(-12px, 22px) rotate(-45deg);
   }
-  .header__trigger.active span:nth-of-type(2) {
+  .header__trigger.-opened span:nth-of-type(2) {
     opacity: 0;
   }
-  .header__trigger.active span:nth-of-type(3) {
+  .header__trigger.-opened span:nth-of-type(3) {
     background-color: #b51d24;
     transform: translate(-12px, 22px) rotate(45deg);
   }
@@ -283,10 +301,12 @@ a {
 
 .fixedConversionArea {
   position: fixed;
-  top: 160px;
+  top: 50%;
   right: 0;
   z-index: 100;
+  white-space: nowrap;
   writing-mode: vertical-rl;
+  transform: translateY(-50%);
 }
 
 .fixedConversionArea__link {

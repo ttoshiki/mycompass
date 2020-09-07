@@ -6,7 +6,8 @@ if((ua.indexOf('iPhone') > 0) || ua.indexOf('iPod') > 0 || (ua.indexOf('Android'
     jQuery('head').prepend('<meta name="viewport" content="width=1440">');
 }
 
-$(function () {
+// ループスライダー
+jQuery(function () {
     $('.loopslider__images').clone().appendTo('.loopslider__wrapper');
 });
 
@@ -14,11 +15,11 @@ $(function () {
 jQuery(function() {
     let _window = jQuery(window),
     _header = jQuery(".header"),
-    heroBottom;
+    headerBottom;
 
     _window.on("scroll", function () {
-    heroBottom = 94;
-    if (_window.scrollTop() > heroBottom) {
+    headerBottom = 60;
+    if (_window.scrollTop() > headerBottom) {
         _header.addClass("-fixed");
     } else {
         if (!(jQuery("#trigger").hasClass("active"))) {
@@ -30,19 +31,20 @@ jQuery(function() {
     // spメニューOPEN
     jQuery(".header__trigger").on('click', function() {
         if ((jQuery(this)).hasClass("-opened")) {
-        jQuery(".header__hammenuWrapper").fadeOut(300);
+            jQuery(".header__hammenuWrapper").fadeOut(300);
+            jQuery(".header").addClass('-opened');
         } else {
-        jQuery(".header__hammenuWrapper").fadeIn(300);
-        jQuery(".header__hammenuWrapper").css('display', 'flex');
+            jQuery(".header__hammenuWrapper").fadeIn(300);
+            jQuery(".header__hammenuWrapper").css('display', 'flex');
         }
-        if (!(jQuery("#header").hasClass("-fixed"))) {
-        jQuery(".header").addClass('-fixed');
+        if (!(jQuery(".header").hasClass("-opened"))) {
+            jQuery(".header").addClass('-opened');
         } else {
-        if (_window.scrollTop() < 94) {
-            jQuery("header").removeClass("-fixed");
+            jQuery(".header").removeClass('-opened');
         }
+        if (_window.scrollTop() < 60 && !(jQuery(".header__trigger").hasClass("-opened"))) {
+            jQuery(".header").removeClass("-fixed");
         }
         jQuery(this).toggleClass('-opened')
-        jQuery(".header__trigger").toggleClass('active');
     });
 })
