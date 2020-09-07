@@ -50,7 +50,12 @@
     }
 
     &__navItem {
-      font-size: 13px;
+      font-size: 3.47vw;
+      white-space: nowrap;
+    }
+
+    &__nav {
+      padding: 0 20px;
     }
   }
 }

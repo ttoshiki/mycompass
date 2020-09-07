@@ -1,3 +1,15 @@
+/*
+Theme Name: MY COMPASS
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: MY COMPASS original theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: MY COMPASS
+*/
+
 *,
 *::after,
 *::before {
@@ -9,6 +21,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", -apple-system,
     BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue,
     Verdana, Meiryo, sans-serif;
@@ -27,4 +40,14 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+select,
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  border-radius: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
 }

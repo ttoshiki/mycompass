@@ -199,7 +199,7 @@
 
   &__pointItem {
     width: calc(100% / 3);
-    text-align-last: center;
+    text-align: center;
 
     &:not(:first-child) {
       border-left: 1px solid $--color-primary;
@@ -717,7 +717,7 @@
   }
 
   .handWriting {
-    margin: 0 4px 0 -12px;
+    margin: 0 4px 0 -6px;
 
     picture {
       padding: 0 4px;
@@ -760,7 +760,7 @@
 
   &__termNum {
     display: inline-block;
-    padding: 8px 24px;
+    padding: 6px 24px;
     color: $--color-primary;
     letter-spacing: 3px;
     border: 1px solid $--color-primary;
@@ -1153,21 +1153,109 @@
 
 .form {
   padding: 100px 0;
-  color: $white;
-  text-align: center;
   background-color: #e15459;
 
   &__heading {
     margin: 0;
     font-size: 25px;
     line-height: 2;
+    color: $white;
+    text-align: center;
     letter-spacing: 3px;
   }
 
   &__subHeading {
     margin: 48px 0 0;
     font-size: 14px;
+    color: $white;
+    text-align: center;
     letter-spacing: 3px;
+  }
+
+  #booking-package-locale-ja {
+    max-width: 720px;
+    margin: 24px auto 0;
+    box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  #booking-package_schedulePage .selectPanel:hover,
+  #booking-package_calendarPage .pointer:hover,
+  #booking-package_schedulePage .selectPanelActive {
+    background-color: $--color-primary-light;
+  }
+
+  #booking-package_calendarPage .dayPanel {
+    width: calc(100% / 7);
+  }
+
+  #booking-package_calendarPage .calendar {
+    width: 97%;
+    margin: 0 auto 10px;
+  }
+
+  #booking-package,
+  #booking-package_calendarPage {
+    border-radius: 10px;
+  }
+
+  #booking-package .bookingButton,
+  #booking-package_schedulePage button {
+    color: $white;
+    background-color: $--color-primary;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $--color-primary;
+      cursor: pointer;
+      background-color: $--color-primary-light;
+    }
+  }
+
+  #booking-package .bookingButton,
+  #booking-package_inputFormPanel #returnToSchedules {
+    padding: 12px 24px;
+  }
+
+  #booking-package_schedulePage button {
+    padding: 4px 24px;
+  }
+
+  #booking-package_inputFormPanel #returnToSchedules {
+    color: $--color-primary;
+    background-color: transparent;
+    border: 1px solid $--color-primary;
+    border-radius: 10px;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $white;
+      cursor: pointer;
+      background-color: $--color-primary;
+    }
+  }
+
+  #booking-package_schedulePage .selectedDate,
+  #booking-package_schedulePage .bottomPanelNoAnimation,
+  #booking-package_schedulePage,
+  #booking-package_schedulePage .topPanelNoAnimation,
+  #booking-package_inputFormPanel,
+  #booking-package_inputFormPanel .selectedDate {
+    border-radius: 10px;
+  }
+
+  #booking-package_inputFormPanel .row {
+    border-bottom-width: 0;
+  }
+
+  #booking-package_inputFormPanel input[type="text"] {
+    padding: 10px 0 10px 10px;
+    border: 1px solid #d8d8d8;
+  }
+
+  #booking-package_inputFormPanel .bottomBarPanel:last-of-type {
+    padding-bottom: 24px;
   }
 }
 
@@ -1253,7 +1341,7 @@
     }
 
     .handWriting {
-      margin: -6px 0 0 -4px;
+      margin: -6px 4px 0 -4px;
 
       img {
         width: 140px;
@@ -1361,7 +1449,7 @@
 
     &__backimage {
       img {
-        min-height: 600px;
+        min-height: 560px;
       }
     }
 
@@ -1457,6 +1545,8 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
+      grid-row-gap: 0;
+      grid-column-gap: 0;
       justify-content: center;
     }
 
@@ -1465,7 +1555,12 @@
       align-items: center;
       width: 47%;
       padding: 12px 8px;
+      margin-bottom: 12px;
       text-align: justify;
+
+      &:nth-child(even) {
+        margin-left: 12px;
+      }
     }
   }
 
@@ -1746,6 +1841,10 @@
 
     &__position {
       font-size: 12px;
+    }
+
+    &__nameWrapper {
+      justify-content: center;
     }
 
     &__name {

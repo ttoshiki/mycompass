@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/*
+Theme Name: MY COMPASS
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: MY COMPASS original theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: MY COMPASS
+*/
 *,
 *::after,
 *::before {
@@ -10,6 +21,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, Verdana, Meiryo, sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -26,6 +38,16 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+select,
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  border-radius: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .-sp {
@@ -47,6 +69,7 @@ a {
 
 .handWriting picture {
   display: inline-flex;
+  align-items: flex-end;
   padding: 0 8px;
 }
 
@@ -181,7 +204,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 86%;
+    height: 80%;
     font-size: 16px;
   }
   .header__hammenuInner a {
@@ -299,7 +322,11 @@ a {
     width: 160px;
   }
   .footer__navItem {
-    font-size: 13px;
+    font-size: 3.47vw;
+    white-space: nowrap;
+  }
+  .footer__nav {
+    padding: 0 20px;
   }
 }
 
@@ -495,7 +522,7 @@ a {
 
 .overview__pointItem {
   width: calc(100% / 3);
-  text-align-last: center;
+  text-align: center;
 }
 
 .overview__pointItem:not(:first-child) {
@@ -978,7 +1005,7 @@ a {
 }
 
 .curriculum .handWriting {
-  margin: 0 4px 0 -12px;
+  margin: 0 4px 0 -6px;
 }
 
 .curriculum .handWriting picture {
@@ -1022,7 +1049,7 @@ a {
 
 .curriculum__termNum {
   display: inline-block;
-  padding: 8px 24px;
+  padding: 6px 24px;
   color: #b51d24;
   letter-spacing: 3px;
   border: 1px solid #b51d24;
@@ -1412,8 +1439,6 @@ a {
 
 .form {
   padding: 100px 0;
-  color: #ffffff;
-  text-align: center;
   background-color: #e15459;
 }
 
@@ -1421,13 +1446,104 @@ a {
   margin: 0;
   font-size: 25px;
   line-height: 2;
+  color: #ffffff;
+  text-align: center;
   letter-spacing: 3px;
 }
 
 .form__subHeading {
   margin: 48px 0 0;
   font-size: 14px;
+  color: #ffffff;
+  text-align: center;
   letter-spacing: 3px;
+}
+
+.form #booking-package-locale-ja {
+  max-width: 720px;
+  margin: 24px auto 0;
+  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form #booking-package_schedulePage .selectPanel:hover,
+.form #booking-package_calendarPage .pointer:hover,
+.form #booking-package_schedulePage .selectPanelActive {
+  background-color: #fdf5f6;
+}
+
+.form #booking-package_calendarPage .dayPanel {
+  width: calc(100% / 7);
+}
+
+.form #booking-package_calendarPage .calendar {
+  width: 97%;
+  margin: 0 auto 10px;
+}
+
+.form #booking-package,
+.form #booking-package_calendarPage {
+  border-radius: 10px;
+}
+
+.form #booking-package .bookingButton,
+.form #booking-package_schedulePage button {
+  color: #ffffff;
+  background-color: #b51d24;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.form #booking-package .bookingButton:hover,
+.form #booking-package_schedulePage button:hover {
+  color: #b51d24;
+  cursor: pointer;
+  background-color: #fdf5f6;
+}
+
+.form #booking-package .bookingButton,
+.form #booking-package_inputFormPanel #returnToSchedules {
+  padding: 12px 24px;
+}
+
+.form #booking-package_schedulePage button {
+  padding: 4px 24px;
+}
+
+.form #booking-package_inputFormPanel #returnToSchedules {
+  color: #b51d24;
+  background-color: transparent;
+  border: 1px solid #b51d24;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.form #booking-package_inputFormPanel #returnToSchedules:hover {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #b51d24;
+}
+
+.form #booking-package_schedulePage .selectedDate,
+.form #booking-package_schedulePage .bottomPanelNoAnimation,
+.form #booking-package_schedulePage,
+.form #booking-package_schedulePage .topPanelNoAnimation,
+.form #booking-package_inputFormPanel,
+.form #booking-package_inputFormPanel .selectedDate {
+  border-radius: 10px;
+}
+
+.form #booking-package_inputFormPanel .row {
+  border-bottom-width: 0;
+}
+
+.form #booking-package_inputFormPanel input[type="text"] {
+  padding: 10px 0 10px 10px;
+  border: 1px solid #d8d8d8;
+}
+
+.form #booking-package_inputFormPanel .bottomBarPanel:last-of-type {
+  padding-bottom: 24px;
 }
 
 @media screen and (max-width: 480px) {
@@ -1498,7 +1614,7 @@ a {
     letter-spacing: 3px;
   }
   .overview .handWriting {
-    margin: -6px 0 0 -4px;
+    margin: -6px 4px 0 -4px;
   }
   .overview .handWriting img {
     width: 140px;
@@ -1580,7 +1696,7 @@ a {
     padding: 120px 20px;
   }
   .conversionArea__backimage img {
-    min-height: 600px;
+    min-height: 560px;
   }
   .conversionArea__heading {
     text-align: center;
@@ -1649,6 +1765,8 @@ a {
   .career__list {
     display: flex;
     flex-wrap: wrap;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
     justify-content: center;
   }
   .career__item {
@@ -1656,7 +1774,11 @@ a {
     align-items: center;
     width: 47%;
     padding: 12px 8px;
+    margin-bottom: 12px;
     text-align: justify;
+  }
+  .career__item:nth-child(even) {
+    margin-left: 12px;
   }
   .backimage img {
     min-width: auto;
@@ -1848,6 +1970,9 @@ a {
   }
   .consultant__position {
     font-size: 12px;
+  }
+  .consultant__nameWrapper {
+    justify-content: center;
   }
   .consultant__name {
     font-size: 22px;

@@ -8,7 +8,7 @@ if((ua.indexOf('iPhone') > 0) || ua.indexOf('iPod') > 0 || (ua.indexOf('Android'
 
 // ループスライダー
 jQuery(function () {
-    $('.loopslider__images').clone().appendTo('.loopslider__wrapper');
+    jQuery('.loopslider__images').clone().appendTo('.loopslider__wrapper');
 });
 
 // ヘッダースクロール時固定
