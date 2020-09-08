@@ -629,6 +629,7 @@ input[type="email"] {
   letter-spacing: 2px;
   border: 1px solid #ffffff;
   border-radius: 10px;
+  transition: all 0.2s;
 }
 
 .conversionArea__link.-primary {
@@ -636,6 +637,15 @@ input[type="email"] {
   margin-right: 40px;
   color: #b51d24;
   background-color: #ffffff;
+}
+
+.conversionArea__link.-primary:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.conversionArea__link.-primary:hover img {
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(200%);
 }
 
 .conversionArea__link.-secondary {
@@ -647,7 +657,20 @@ input[type="email"] {
 }
 
 .conversionArea__link.-secondary .conversionArea__arrow {
-  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(200%);
+}
+
+.conversionArea__link.-secondary:hover {
+  color: #b51d24;
+  background-color: #ffffff;
+}
+
+.conversionArea__link.-secondary:hover .conversionArea__arrow {
+  filter: none;
+}
+
+.conversionArea__link.-secondary:hover img {
+  filter: none;
 }
 
 .conversionArea__icon {
@@ -664,6 +687,7 @@ input[type="email"] {
 .conversionArea__icon.-click img {
   width: 40px;
   height: auto;
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(200%);
 }
 
 .conversionArea__arrow {
@@ -1542,8 +1566,16 @@ input[type="email"] {
   border: 1px solid #d8d8d8;
 }
 
-.form #booking-package_inputFormPanel .bottomBarPanel:last-of-type {
-  padding-bottom: 24px;
+.form #booking-package_inputFormPanel .bottomBarPanel {
+  padding: 10px 10px 2px 10px;
+}
+
+.form #booking-package_inputFormPanel {
+  padding-bottom: 12px;
+}
+
+.form #booking-package_inputFormPanel .cartPanel {
+  padding: 10px 0 4px;
 }
 
 @media screen and (max-width: 480px) {

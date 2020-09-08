@@ -302,11 +302,11 @@ get_header();
             <h2 class="sectionHeading">卒業生の経歴</h2>
             <ul class="career__list">
               <li class="career__item">大手金融機関から<br class="-pc">海外駐在妻4年を経て、再就職</li>
-              <li class="career__item">外資営業キャリアを模索する育休中<br class="-pc">アートを学びライターデビュー</li>
+              <li class="career__item">外資営業キャリアを模索する<br class="-sp">育休中<br class="-pc">アートを学びライターデビュー</li>
               <li class="career__item">大手メーカー事業開発担当、<br class="-pc">育休中に育休コミュニティ立ち上げ</li>
               <li class="career__item">都心の商船会社広報から<br class="-pc">大好きな地元茨城ベンチャーへ転職</li>
               <li class="career__item">マザーハウス退職後、駐在帯同2カ国を経て<br class="-pc">母子帰国、フリー広報へ</li>
-              <li class="career__item">マンネリの大手警備会社人事10年目<br class="-pc">意欲をアピールし国際プロジェクト入り</li>
+              <li class="career__item">マンネリの大手警備会社人事10年目<br>意欲をアピールし国際プロジェクト入り</li>
               <li class="career__item">大手通信会社 法務8年、将来の仕事と<br class="-pc">生活を試行錯誤、淡路島へ親子移住</li>
               <li class="career__item">2人目育休中に働き方を模索、<br class="-pc">芸大卒ピラティスインストラクターとして独立</li>
               <li class="career__item">忙しいだけのワーママ生活を脱し、<br class="-pc">新たな場で医薬研究開発者の道を邁進</li>
