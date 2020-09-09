@@ -183,7 +183,7 @@ get_header();
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logos-sp.webp" media="(max-width: 480px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logos.webp" media="(min-width: 481px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/logos-sp.png" media="(max-width: 480px)">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos.png" alt="企業ロゴ">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos.png" alt="企業ロゴ" loading="lazy">
           </picture>
           <div class="overview__paragraphWrapper">
             <p class="overview__paragraph">多数のメディアで取り組みが<br class="-sp">紹介されました。</p>
@@ -194,7 +194,7 @@ get_header();
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_back01-sp.webp" media="(max-width: 480px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_back01.webp" media="(min-width: 481px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_back01-sp.jpg" media="(max-width: 480px)">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img_back01.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img_back01.jpg" alt="" loading="lazy">
           </picture>
           <h2 class="conversionArea__heading">無料カウンセリング・<br class="-sp">お申し込み</h2>
           <div class="conversionArea__links">
@@ -231,7 +231,7 @@ get_header();
               <div class="voice__person">
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/voice_01.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/voice_01.png" alt="白鳥舞">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/voice_01.png" alt="白鳥舞" loading="lazy">
                 </picture>
                 <span class="voice__name">白鳥舞さん</span>
               </div>
@@ -248,7 +248,7 @@ get_header();
               <div class="voice__person">
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/voice_02.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/voice_02.png" alt="遠藤有夏">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/voice_02.png" alt="遠藤有夏" loading="lazy">
                 </picture>
                 <span class="voice__name">遠藤有夏さん</span>
               </div>
@@ -265,7 +265,7 @@ get_header();
               <div class="voice__person">
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/voice_03.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/voice_03.png" alt="柳澤聖子">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/voice_03.png" alt="柳澤聖子" loading="lazy">
                 </picture>
                 <span class="voice__name">柳澤聖子さん</span>
               </div>
@@ -282,7 +282,7 @@ get_header();
               <div class="voice__person">
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/voice_04.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/voice_04.png" alt="中西葉子">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/voice_04.png" alt="中西葉子" loading="lazy">
                 </picture>
                 <span class="voice__name">中西葉子さん</span>
               </div>
@@ -317,7 +317,7 @@ get_header();
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_back02-sp.webp" media="(max-width: 480px)" type="image/webp">
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_back02.webp" media="(min-width: 481px)" type="image/webp">
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_back02-sp.jpg" media="(max-width: 480px)">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img_back02.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img_back02.jpg" alt="" loading="lazy">
         </picture>
         <section class="get">
           <h2 class="sectionHeading">
@@ -356,17 +356,17 @@ get_header();
             <li class="get__item">
               <picture class="get__itemHandwriting -pc">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/speaking.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/speaking.png" alt="話す">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/speaking.png" alt="話す" loading="lazy">
               </picture>
               <picture class="get__itemPicture">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_speaking-sp.webp" media="(max-width: 480px)" type="image/webp">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_speaking.webp" media="(min-width: 481px)" type="image/webp">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_speaking-sp.jpg" media="(max-width: 480px)">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img_speaking.jpg" alt="話す">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img_speaking.jpg" alt="話す" loading="lazy">
               </picture>
               <picture class="get__itemHandwriting -sp">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/speaking-sp.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/speaking-sp.png" alt="話す">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/speaking-sp.png" alt="話す" loading="lazy">
               </picture>
               <div class="get__text">
                 <h3 class="get__heading">マンツーマンカウンセリング</h3>
@@ -378,17 +378,17 @@ get_header();
             <li class="get__item">
               <picture class="get__itemHandwriting -pc">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/connecting.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/connecting.png" alt="つながる">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/connecting.png" alt="つながる" loading="lazy">
               </picture>
               <picture class="get__itemPicture">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_connecting-sp.webp" media="(max-width: 480px)" type="image/webp">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_connecting.webp" media="(min-width: 481px)" type="image/webp">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_connecting-sp.jpg" media="(max-width: 480px)">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img_connecting.jpg" alt="つながる">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img_connecting.jpg" alt="つながる" loading="lazy">
               </picture>
               <picture class="get__itemHandwriting -sp">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/connecting-sp.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/connecting-sp.png" alt="つながる">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/connecting-sp.png" alt="つながる" loading="lazy">
               </picture>
               <div class="get__text">
                 <h3 class="get__heading">コミュニティカウンセリング</h3>
@@ -405,35 +405,35 @@ get_header();
             <li class="recommend__item">
               <picture class="recommend__icon">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.png" alt="チェックボックスアイコン">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.png" alt="チェックボックスアイコン" loading="lazy">
               </picture>
               <span class="recommend__span">仕事も結婚も出産も、どれも諦めたくない</span>
             </li>
             <li class="recommend__item">
               <picture class="recommend__icon">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.png" alt="チェックボックスアイコン">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.png" alt="チェックボックスアイコン" loading="lazy">
               </picture>
               <span class="recommend__span">自分のやりたいことやキャリアの方向性を明確にしたい</span>
             </li>
             <li class="recommend__item">
               <picture class="recommend__icon">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.png" alt="チェックボックスアイコン">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.png" alt="チェックボックスアイコン" loading="lazy">
               </picture>
               <span class="recommend__span">今の働き方に漠然とした不安や物足りなさを感じている</span>
             </li>
             <li class="recommend__item">
               <picture class="recommend__icon">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.png" alt="チェックボックスアイコン">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.png" alt="チェックボックスアイコン" loading="lazy">
               </picture>
               <span class="recommend__span">自分一人で考えてきたが、煮詰まって進めずにいる方</span>
             </li>
             <li class="recommend__item">
               <picture class="recommend__icon">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.png" alt="チェックボックスアイコン">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon_checkbox.png" alt="チェックボックスアイコン" loading="lazy">
               </picture>
               <span class="recommend__span">本来の自分らしさを取り戻し、本音で話せる仲間に出会いたい</span>
             </li>
@@ -444,31 +444,31 @@ get_header();
             <div class="loopslider__images">
               <picture class="loopslider__picture">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slider01.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider01.jpg" alt="スライダー写真">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider01.jpg" alt="スライダー写真" loading="lazy">
               </picture>
               <picture class="loopslider__picture">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slider02.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider02.jpg" alt="スライダー写真">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider02.jpg" alt="スライダー写真" loading="lazy">
               </picture>
               <picture class="loopslider__picture">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slider03.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider03.jpg" alt="スライダー写真">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider03.jpg" alt="スライダー写真" loading="lazy">
               </picture>
               <picture class="loopslider__picture">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slider04.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider04.jpg" alt="スライダー写真">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider04.jpg" alt="スライダー写真" loading="lazy">
               </picture>
               <picture class="loopslider__picture">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slider05.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider05.jpg" alt="スライダー写真">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider05.jpg" alt="スライダー写真" loading="lazy">
               </picture>
               <picture class="loopslider__picture">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slider06.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider06.jpg" alt="スライダー写真">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider06.jpg" alt="スライダー写真" loading="lazy">
               </picture>
               <picture class="loopslider__picture">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/slider07.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider07.jpg" alt="スライダー写真">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider07.jpg" alt="スライダー写真" loading="lazy">
               </picture>
             </div>
           </div>
@@ -482,7 +482,7 @@ get_header();
             <div class="handWriting">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/career.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/career.png" alt="キャリア構築">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/career.png" alt="キャリア構築" loading="lazy">
               </picture>
             </div>できる<br class="-sp">プログラムをご用意いたしました。
           </div>
@@ -490,14 +490,14 @@ get_header();
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/3term-sp.webp" media="(max-width: 480px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/3term.webp" media="(min-width: 481px)" type="image/webp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/3term-sp.png" media="(max-width: 480px)">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/3term.png" alt="受講の流れ">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/3term.png" alt="受講の流れ" loading="lazy">
           </picture>
           <picture class="curriculum__termHeader">
           </picture>
           <div class="curriculum__term">
             <picture class="curriculum__termArrow -pc">
               <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/term_arrow01.webp" media="(min-width: 481px)" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/term_arrow01.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/term_arrow01.png" alt="" loading="lazy">
             </picture>
             <div class="curriculum__termInner">
               <span class="curriculum__termNum">TERM.1</span>
@@ -521,7 +521,7 @@ get_header();
           <div class="curriculum__term">
             <picture class="curriculum__termArrow -pc">
               <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/term_arrow02.webp" media="(min-width: 481px)" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/term_arrow02.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/term_arrow02.png" alt="" loading="lazy">
             </picture>
             <div class="curriculum__termInner">
               <span class="curriculum__termNum">TERM.2</span>
@@ -543,7 +543,7 @@ get_header();
           <div class="curriculum__term">
             <picture class="curriculum__termArrow -pc">
               <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/term_arrow03.webp" media="(min-width: 481px)" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/term_arrow03.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/term_arrow03.png" alt="" loading="lazy">
             </picture>
             <div class="curriculum__termInner">
               <span class="curriculum__termNum">TERM.3</span>
@@ -573,7 +573,7 @@ get_header();
                   テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                 </p>
               </div>
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/h-iwahashi.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/h-iwahashi.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/h-iwahashi@2x.jpg 2x" alt="岩橋ひかり">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/h-iwahashi.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/h-iwahashi.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/h-iwahashi@2x.jpg 2x" alt="岩橋ひかり" loading="lazy">
             </div>
           </div>
         </section>
@@ -582,7 +582,7 @@ get_header();
           <ul class="consultant__list">
             <li class="consultant__item">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/m-akatani.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/m-akatani.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/m-akatani@2x.jpg 2x" alt="赤谷麻愛"
-                class="consultant__photo">
+                class="consultant__photo" loading="lazy">
               <div class="consultant__nameWrapper">
                 <span class="consultant__position">キャリア<br>コンサルタント</span>
                 <span class="consultant__name">赤谷麻愛</span>
@@ -593,7 +593,7 @@ get_header();
             </li>
             <li class="consultant__item">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/s-kamata.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/s-kamata.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/s-kamata@2x.jpg 2x" alt="鎌田淑江"
-                class="consultant__photo">
+                class="consultant__photo" loading="lazy">
               <div class="consultant__nameWrapper">
                 <span class="consultant__position">キャリア<br>コンサルタント</span>
                 <span class="consultant__name">鎌田淑江</span>
@@ -604,7 +604,7 @@ get_header();
             </li>
             <li class="consultant__item">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/m-akatani.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/m-akatani.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/m-akatani@2x.jpg 2x" alt="赤谷麻愛"
-                class="consultant__photo">
+                class="consultant__photo" loading="lazy">
               <div class="consultant__nameWrapper">
                 <span class="consultant__position">キャリア<br>コンサルタント</span>
                 <span class="consultant__name">川口まどか</span>
@@ -615,7 +615,7 @@ get_header();
             </li>
             <li class="consultant__item">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/m-akatani.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/m-akatani.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/m-akatani@2x.jpg 2x" alt="赤谷麻愛"
-                class="consultant__photo">
+                class="consultant__photo" loading="lazy">
               <div class="consultant__nameWrapper">
                 <span class="consultant__position">キャリア<br>コンサルタント</span>
                 <span class="consultant__name">赤谷麻愛</span>
@@ -626,7 +626,7 @@ get_header();
             </li>
             <li class="consultant__item">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/s-kamata.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/s-kamata.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/s-kamata@2x.jpg 2x" alt="鎌田淑江"
-                class="consultant__photo">
+                class="consultant__photo" loading="lazy">
               <div class="consultant__nameWrapper">
                 <span class="consultant__position">キャリア<br>コンサルタント</span>
                 <span class="consultant__name">鎌田淑江</span>
@@ -637,7 +637,7 @@ get_header();
             </li>
             <li class="consultant__item">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/m-akatani.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/m-akatani.jpg, <?php echo get_template_directory_uri(); ?>/assets/img/m-akatani@2x.jpg 2x" alt="赤谷麻愛"
-                class="consultant__photo">
+                class="consultant__photo" loading="lazy">
               <div class="consultant__nameWrapper">
                 <span class="consultant__position">キャリア<br>コンサルタント</span>
                 <span class="consultant__name">川口まどか</span>
