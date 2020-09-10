@@ -40,16 +40,16 @@ get_header();
           </h1>
           <ul class="header__navList">
             <li class="header__navItem">
-              <a href="#reason" class="header__navLink">カリキュラム</a>
+              <a href="#sec-curriculum" class="header__navLink">カリキュラム</a>
             </li>
             <li class="header__navItem">
-              <a href="#flow" class="header__navLink">受講生の紹介</a>
+              <a href="#sec-voice" class="header__navLink">受講生の紹介</a>
             </li>
             <li class="header__navItem">
-              <a href="#price" class="header__navLink">得られること</a>
+              <a href="#sec-get" class="header__navLink">得られること</a>
             </li>
             <li class="header__navItem">
-              <a href="#salon" class="header__navLink">概要</a>
+              <a href="#sec-course" class="header__navLink">概要</a>
             </li>
           </ul>
         </nav>
@@ -70,19 +70,19 @@ get_header();
             </span>
             <div class="header__hammenuWrapper">
               <div class="header__hammenuInner">
-                <a href="" class="header__hammenuLink">カリキュラム</a>
-                <a href="" class="header__hammenuLink">受講生の紹介</a>
-                <a href="" class="header__hammenuLink">得られること</a>
-                <a href="" class="header__hammenuLink">概要</a>
-                <a href="" class="header__hammenuConversion">無料カウンセリング</a>
-                <a href="" class="header__hammenuConversion">お申し込み</a>
+                <a href="#sec-curriculum" class="header__hammenuLink hammenuLink">カリキュラム</a>
+                <a href="#sec-voice" class="header__hammenuLink hammenuLink">受講生の紹介</a>
+                <a href="#sec-get" class="header__hammenuLink hammenuLink">得られること</a>
+                <a href="#sec-course" class="header__hammenuLink hammenuLink">概要</a>
+                <a href="#sec-form" class="header__hammenuConversion hammenuLink">無料カウンセリング</a>
+                <a href="" class="header__hammenuConversion hammenuLink">お申し込み</a>
               </div>
             </div>
           </div>
         </nav>
       </header>
       <aside class="fixedConversionArea">
-        <a href="" class="fixedConversionArea__link">無料カウンセリング</a><a href="" class="fixedConversionArea__link -secondary">お申し込み</a>
+        <a href="#sec-form" class="fixedConversionArea__link">無料カウンセリング</a><a href="" class="fixedConversionArea__link -secondary">お申し込み</a>
       </aside>
       <main>
         <div class="catch">
@@ -222,7 +222,7 @@ get_header();
             </a>
           </div>
         </section>
-        <section class="voice">
+        <section class="voice" id="sec-voice">
           <h2 class="sectionHeading">
             これまで<strong class="sectionHeading__strong">300人を超える女性</strong>が<br>自分らしいライフキャリアへと<br class="-sp">シフト！
           </h2>
@@ -319,7 +319,7 @@ get_header();
           <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/img_back02-sp.jpg" media="(max-width: 480px)">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img_back02.jpg" alt="" loading="lazy">
         </picture>
-        <section class="get">
+        <section class="get" id="sec-get">
           <h2 class="sectionHeading">
             MYコンパスアカデミーで<br>
             <strong class="sectionHeading__strong">得られる３つ</strong>のこと
@@ -474,7 +474,7 @@ get_header();
           </div>
         </section>
         <!--/#loopslider-->
-        <section class="curriculum">
+        <section class="curriculum" id="sec-curriculum">
           <h2 class="sectionHeading">カリキュラムと<strong class="sectionHeading__strong">受講の流れ</strong></h2>
           <div class="curriculum__lead">
             これまで300名の女性を変えてきた<br class="-sp">MYコンパス・アカデミーのカリキュラムを<br class="-sp">更に研ぎ澄ませ、<br>
@@ -648,7 +648,7 @@ get_header();
             </li>
           </ul>
         </section>
-        <section class="course">
+        <section class="course" id="sec-course">
           <h2 class="sectionHeading">講座のご案内</h2>
           <dl class="course__table">
             <div class="course__row">
@@ -757,7 +757,7 @@ get_header();
             </li>
           </ul>
         </section>
-        <section class="form">
+        <section class="form" id="sec-form">
           <h2 class="form__heading">
             まずは、無料カウンセリングから<br class="-pc">はじめましょう。
           </h2>

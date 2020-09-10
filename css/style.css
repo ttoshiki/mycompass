@@ -1580,6 +1580,14 @@ input[type="email"] {
 }
 
 @media screen and (max-width: 480px) {
+  #sec-curriculum,
+  #sec-voice,
+  #sec-get,
+  #sec-course,
+  #sec-form {
+    padding-top: 64px;
+    margin-top: -64px;
+  }
   .fixedConversionArea {
     top: auto;
     bottom: 0;
